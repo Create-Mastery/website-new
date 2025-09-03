@@ -1,0 +1,94 @@
+---
+import "../styles/global.css";
+import Links from "../components/Links.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <script
+            src="https://kit.fontawesome.com/f0be53b175.js"
+            crossorigin="anonymous"></script>
+        <title>{Astro.props.title}</title>
+    </head>
+
+    <body class="bg-stone-900 flex flex-col min-h-screen">
+        <!----------- HEADER ----------->
+        <header
+            class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
+        >
+            <div
+                class="bg-blue-300 flex flex-row w-full px-14 py-4 gap-5 justify-center items-center"
+            >
+                <a
+                    href="https://www.curseforge.com/minecraft/mc-mods/create"
+                    target="_blank"
+                    class="hidden md:block"
+                >
+                    <img
+                        src="/src/assets/create-logo.png"
+                        alt="logo-create"
+                        class="size-32 select-none object-contain"
+                    />
+                </a>
+                <h1
+                    class="text-6xl font-bold text-stone-900 select-none text-center md:text-left"
+                >
+                    CREATE MASTERY
+                </h1>
+            </div>
+        </header>
+
+        <nav
+            class="justify-end items-end sm:justify-center flex bg-blue-200 w-full h-fit sm:pt-3 flex-col sm:flex-row sticky top-0"
+        >
+            <div
+                id="menu-toggle"
+                class="sm:hidden pr-5 py-3 w-full sm:w-auto flex justify-end"
+            >
+                <i
+                    class="fa-solid fa-bars text-stone-900 text-4xl hover:cursor-pointer"
+                    role="button"
+                    tabindex="0"
+                    onclick="
+                            const navLinks = document.getElementById('navLinks');
+                            const menuToggle = document.getElementById('menu-toggle');
+                            navLinks?.classList.toggle('hidden');
+                            menuToggle?.classList.toggle('bg-blue-300');
+                        "
+                >
+                </i>
+            </div>
+
+            <ul
+                class="sm:flex sm:flex-row flex-col hidden w-full sm:w-auto pb-3 justify-center"
+                id="navLinks"
+            >
+                <li class="hover:bg-blue-300">
+                    <Links link="/" text="GUIDE" />
+                </li>
+                <li class="hover:bg-blue-300">
+                    <Links link="/" text="SCSDC" />
+                </li>
+                <li class="hover:bg-blue-300">
+                    <Links
+                        link="https://www.curseforge.com/minecraft/mc-mods/create"
+                        text="DOWNLOAD"
+                    />
+                </li>
+            </ul>
+        </nav>
+
+        <main class="flex-grow h-[2000px]">
+            <!----------- MAIN ----------->
+        </main>
+        <!--
+        <footer class="">
+            --------- FOOTER ---------
+        </footer>
+        -->
+    </body>
+</html>
