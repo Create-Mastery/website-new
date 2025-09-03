@@ -1,0 +1,11 @@
+---
+import "../styles/global.css";
+const { link, text } = Astro.props;
+---
+
+<a
+    href={link}
+    target="_blank"
+    class="text-stone-900 select-none font-bold text-4xl hover:underline"
+    >{text}</a
+>
