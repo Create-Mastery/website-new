@@ -1,8 +1,24 @@
 ---
-import mainPage from "../components/Links.astro";
 import Layout from "../layouts/Layout-main.astro";
 ---
 
-<Layout title="Home">
-    <mainPage></mainPage>
+<Layout title="Home - Create Mastery">
+    <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center flex-row gap-10 my-4">
+            <div class="relative mx-96">
+                <img
+                    src="/src/assets/hero-section-visual.png"
+                    alt="Hero Section Visual"
+                    class="h-full w-auto rounded-3xl border-blue-400 border border-solid"
+                />
+                <div class="absolute inset-0 pt-7 pl-7">
+                    <h1
+                        class="text-blue-400 font-bold text-6xl whitespace-pre-line text-shadow-lg text-shadow-stone-900"
+                    >
+                        <q>Master the art of Create in Minecraft</q>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </Layout>
