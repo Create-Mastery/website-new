@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Links from "../components/Links.astro";
+import LinksFooter from "../components/Links-footer.astro";
 ---
 
 <!doctype html>
@@ -110,7 +111,43 @@ import Links from "../components/Links.astro";
                     </li>
                 </ul>
             </div>
-            <div></div>
+
+            <div
+                class="bg-blue-300 w-full py-4 flex justify-center items-center gap-12 flex-col md:flex-row md:gap-28 lg:gap-44 xl:gap-72"
+            >
+                <div
+                    class="flex flex-col text-stone-900 items-center justify-center"
+                >
+                    <h1 class="text-stone-900 select-none font-bold text-3xl">
+                        OTHER GUIDES
+                    </h1>
+                    <hr class="text-stone-900 h-2 w-full" />
+                    <LinksFooter link="/" text="THE BEST COMPLEMENTARY MODS" />
+                    <LinksFooter link="/" text="ADD-ONS" />
+                </div>
+
+                <div
+                    class="flex flex-col text-stone-900 items-center justify-center"
+                >
+                    <h1 class="text-stone-900 select-none font-bold text-3xl">
+                        CONTACT
+                    </h1>
+                    <hr class="text-stone-900 h-2 w-full" />
+                    <LinksFooter
+                        link="mailto: info@createmastery.org"
+                        text="INFO: info@createmastery.org"
+                    />
+                    <LinksFooter link="/" text="ABOUT US" />
+                </div>
+            </div>
+
+            <div
+                class="bg-blue-300 w-full py-2 flex justify-center items-center flex-row"
+            >
+                <h2 class="text-stone-900 text-lg sm:text-xl">
+                    © 2025 Create Mastery. All rights reserved.
+                </h2>
+            </div>
         </footer>
     </body>
 </html>
