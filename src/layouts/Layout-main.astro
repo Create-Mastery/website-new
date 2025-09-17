@@ -83,7 +83,7 @@ import LinksFooter from "../components/Links-footer.astro";
             </ul>
         </nav>
 
-        <main class="flex-grow">
+        <main class="flex flex-grow justify-center items-center">
             <!----------- MAIN ----------->
             <slot />
         </main>
@@ -141,12 +141,17 @@ import LinksFooter from "../components/Links-footer.astro";
                     <LinksFooter link="/" text="ABOUT US" />
                 </div>
             </div>
-
             <div
                 class="bg-blue-300 w-full py-2 flex justify-center items-center flex-row"
             >
                 <h2 class="text-stone-900 text-lg sm:text-xl">
-                    © 2025 Create Mastery. All rights reserved.
+                    Made with&#10084;by Create Mastery - Source code:
+                    <a
+                        href="https://github.com/Create-Mastery/website-new"
+                        target="_blank"
+                        class="text-stone-900 font-bold hover:underline"
+                        >Github</a
+                    >
                 </h2>
             </div>
         </footer>

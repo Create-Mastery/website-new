@@ -1,0 +1,11 @@
+---
+import "../styles/global.css";
+const { link, text } = Astro.props;
+---
+
+<a
+    href={link}
+    target="_blank"
+    class="text-blue-300 rounded font-bold w-fit px-4 my-6 text-2xl py-2 border-blue-300 border-2"
+    ><h2>{text}</h2></a
+>
