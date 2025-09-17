@@ -5,26 +5,49 @@ import LinksHero2 from "../components/Links-hero-2.astro";
 ---
 
 <Layout title="Home - Create Mastery">
+    <!------ HERO SECTION ------>
     <div
         class="flex flex-col text-center mt-10 mx-auto justify-center items-center"
     >
-        <h1 class="font-bold text-blue-300 text-5xl sm:text-7xl mb-4">
-            <q><cite>Master the art of Create in Minecraft</cite></q>
+        <h1
+            class="font-bold text-blue-300 text-5xl sm:text-7xl mb-4 select-none"
+        >
+            <cite>Master the art of Create in Minecraft</cite>
         </h1>
-        <h2 class="font-bold text-blue-300 text-xl sm:text-2xl">
+        <h2 class="font-bold text-blue-300 text-xl sm:text-2xl select-none">
             <cite>Guides, modpacks, and tips for next-level creations</cite>
         </h2>
-        <div class="flex flex-row gap-7">
+        <div class="flex flex-row gap-6">
             <LinksHero link="/guide" text="GET STARTED" />
             <LinksHero2
                 link="https://discord.gg/RVX6RRqkt5"
                 text="JOIN THE COMMUNITY"
             />
         </div>
-        <img
-            src="/src/assets/hero-section/image.png"
-            alt="Create Art"
-            class="w-auto h-1/4 border border-blue-300 rounded-lg"
-        />
+        <!-- IMAGE HERO -->
+        <table
+            class="w-auto h-1/4 border-2 border-blue-300 rounded-xl border-separate p-1 bg-stone-950"
+        >
+            <tr>
+                <td>
+                    <img
+                        src="/src/assets/hero-section/image.png"
+                        alt="Create Art"
+                        class="rounded-lg"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td class="text-blue-300 font-bold pt-1 text-xl">
+                    <a
+                        href="https://www.youtube.com/watch?v=rR8W-f9YhYA"
+                        target="_blank"
+                        class="hover:underline select-none"
+                    >
+                        <cite>This is create.</cite>
+                    </a>
+                </td>
+            </tr>
+        </table>
     </div>
 </Layout>
