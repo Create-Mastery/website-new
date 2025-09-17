@@ -1,0 +1,105 @@
+---
+import "../styles/global.css";
+import LinksFooter from "../components/Links-footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <script
+            src="https://kit.fontawesome.com/f0be53b175.js"
+            crossorigin="anonymous"></script>
+        <title>{Astro.props.title}</title>
+    </head>
+    <body class="bg-stone-900 flex flex-col min-h-screen">
+        <header
+            class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
+        >
+            <div
+                class="bg-blue-300 flex flex-row w-full px-14 py-4 gap-5 justify-between items-center"
+            >
+                <div>
+                    <a
+                        href="/"
+                        class="text-3xl font-bold text-stone-900 select-none hover:underline"
+                        target="_blank">CREATE MASTERY</a
+                    >
+                </div>
+            </div>
+        </header>
+        <main class="flex flex-grow justify-center">
+            <slot />
+        </main>
+        <footer
+            class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
+        >
+            <!----------- FOOTER ----------->
+            <div
+                class="flex items-center justify-center bg-blue-200 w-full py-2"
+            >
+                <ul class="flex-row flex gap-4">
+                    <li>
+                        <a href="https://discord.gg/RVX6RRqkt5" target="_blank">
+                            <i class="fa-brands fa-discord fa-xl text-stone-900"
+                            ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/Create-Mastery"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github fa-xl text-stone-900"
+                            ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="bg-blue-300 w-full py-4 flex justify-center items-center gap-12 flex-col md:flex-row md:gap-28 lg:gap-44 xl:gap-72"
+            >
+                <div
+                    class="flex flex-col text-stone-900 items-center justify-center"
+                >
+                    <h1 class="text-stone-900 select-none font-bold text-3xl">
+                        OTHER GUIDES
+                    </h1>
+                    <hr class="text-stone-900 h-2 w-full" />
+                    <LinksFooter link="/" text="THE BEST COMPLEMENTARY MODS" />
+                    <LinksFooter link="/" text="ADD-ONS" />
+                </div>
+
+                <div
+                    class="flex flex-col text-stone-900 items-center justify-center"
+                >
+                    <h1 class="text-stone-900 select-none font-bold text-3xl">
+                        CONTACT
+                    </h1>
+                    <hr class="text-stone-900 h-2 w-full" />
+                    <LinksFooter
+                        link="mailto: info@createmastery.org"
+                        text="INFO: info@createmastery.org"
+                    />
+                    <LinksFooter link="/" text="ABOUT US" />
+                </div>
+            </div>
+            <div
+                class="bg-blue-300 w-full py-2 flex justify-center items-center flex-row"
+            >
+                <h2 class="text-stone-900 text-lg sm:text-xl">
+                    Made with&#10084;by Create Mastery - Source code:
+                    <a
+                        href="https://github.com/Create-Mastery/website-new"
+                        target="_blank"
+                        class="text-stone-900 font-bold hover:underline"
+                        >Github</a
+                    >
+                </h2>
+            </div>
+        </footer>
+    </body>
+</html>
