@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import LinksFooter from "../components/links/Links-footer.astro";
+import SideBarEntryNode from "../components/guide/Side-bar-entry-node.astro";
+import SideBarEntry from "../components/guide/Side-bar-entry.astro";
 ---
 
 <!doctype html>
@@ -50,9 +52,22 @@ import LinksFooter from "../components/links/Links-footer.astro";
         </header>
         <main class="flex flex-grow">
             <!----------- MAIN ----------->
-            <div class="w-2/5 bg-stone-800 hidden lg:flex"></div>
+            <div class="w-md bg-stone-800 hidden lg:flex">
+                <div class="flex flex-col gap-2 p-3 w-full">
+                    <SideBarEntry
+                        ><a href="/guide">INTRODUCTION</a></SideBarEntry
+                    >
+                    <SideBarEntryNode title="1. KINETIC ENERGY">
+                        <SideBarEntry>
+                            <a href="/guide/kinetic-energy-intro"
+                                >1.1 WHAT IS KINETIC ENERGY?</a
+                            >
+                        </SideBarEntry>
+                    </SideBarEntryNode>
+                </div>
+            </div>
             <div>
-                <div class="ml-5 mt-2.5 xl:w-9/12">
+                <div class="ml-5 mt-2.5 xl:w-5xl">
                     <slot />
                 </div>
             </div>
