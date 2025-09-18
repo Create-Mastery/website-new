@@ -15,23 +15,47 @@ import LinksFooter from "../components/Links-footer.astro";
         <title>{Astro.props.title}</title>
     </head>
     <body class="bg-stone-900 flex flex-col min-h-screen">
-        <header
-            class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
-        >
+        <header class="p-0 m-0 h-fit items-center justify-center flex relative">
             <div
-                class="bg-blue-300 flex flex-row w-full px-14 py-4 gap-5 justify-between items-center"
+                class="bg-blue-300 flex sm:flex-row w-full px-14 py-4 gap-5 sm:justify-between justify-center items-center flex-col"
             >
-                <div>
+                <a
+                    href="/"
+                    class="sm:text-3xl text-4xl font-bold text-stone-900 select-none hover:underline whitespace-nowrap"
+                    target="_blank"
+                    >CREATE MASTERY
+                </a>
+                <div class="gap-7 flex flex-row select-none">
                     <a
                         href="/"
-                        class="text-3xl font-bold text-stone-900 select-none hover:underline"
-                        target="_blank">CREATE MASTERY</a
+                        class="text-stone-900 text-2xl font-bold hover:underline"
+                        target="_blank"
                     >
+                        HOME
+                    </a>
+                    <a
+                        href="/"
+                        target="_blank"
+                        class="text-stone-900 text-2xl font-bold hover:underline"
+                    >
+                        SCSDC
+                    </a>
+                    <a
+                        href="https://github.com/Create-Mastery"
+                        target="_blank"
+                        class="text-stone-900 text-2xl font-bold hover:underline"
+                    >
+                        GITHUB
+                    </a>
                 </div>
             </div>
         </header>
-        <main class="flex flex-grow justify-center">
-            <slot />
+        <main class="flex flex-grow">
+            <!----------- MAIN ----------->
+            <div class="w-1/4 bg-stone-800 hidden sm:flex"></div>
+            <div class="ml-5 mt-2.5">
+                <slot />
+            </div>
         </main>
         <footer
             class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
