@@ -1,0 +1,19 @@
+---
+import "../../styles/global.css";
+const { link, alt, height } = Astro.props;
+---
+
+<table
+    class={`w-auto ${height} border-2 border-blue-300 rounded-xl border-separate p-1 bg-stone-800`}
+>
+    <tr>
+        <td>
+            <img src={link} alt={alt} class="rounded-lg" />
+        </td>
+    </tr>
+    <tr>
+        <td class="text-blue-300 font-bold pt-1 text-xl">
+            <slot />
+        </td>
+    </tr>
+</table>
