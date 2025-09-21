@@ -101,3 +101,11 @@ import "../../styles/global.css";
         </li>
     </ul>
 </Layout>
+
+<script lang="ts" is:inline>
+    const nodeElement = document.getElementById("id-node-1");
+    const iconElement = document.getElementById("chevronIcon-1");
+
+    if (nodeElement) nodeElement.style.display = "block";
+    if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+</script>

@@ -54,14 +54,14 @@ import SideBarEntry from "../components/guide/Side-bar-entry.astro";
             <!----------- MAIN ----------->
             <div class="w-md bg-stone-800 hidden lg:flex">
                 <div class="flex flex-col gap-2 p-3 w-full">
-                    <SideBarEntry
-                        ><a href="/guide">INTRODUCTION</a></SideBarEntry
-                    >
-                    <SideBarEntryNode title="1. KINETIC ENERGY">
+                    <SideBarEntry>
+                        <a href="/guide">INTRODUCTION</a>
+                    </SideBarEntry>
+                    <SideBarEntryNode title="1. KINETIC ENERGY" id="1">
                         <SideBarEntry>
-                            <a href="/guide/kinetic-energy-intro"
-                                >1.1 WHAT IS KINETIC ENERGY?</a
-                            >
+                            <a href="/guide/kinetic-energy-intro">
+                                1.1 WHAT IS KINETIC ENERGY?
+                            </a>
                         </SideBarEntry>
                     </SideBarEntryNode>
                 </div>
@@ -140,5 +140,7 @@ import SideBarEntry from "../components/guide/Side-bar-entry.astro";
                 </h2>
             </div>
         </footer>
+
+        <script type="module" src="/src/scripts/sidebar/init.ts"></script>
     </body>
 </html>
