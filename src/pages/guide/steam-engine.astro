@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout-guide.astro";
 import Paragraph from "../../components/guide/Paragraph.astro";
 import Title from "../../components/guide/Title.astro";
+import Subtitle from "../../components/guide/Subtitle.astro";
 import DividerMd from "../../components/guide/Divider-md.astro";
 import DividerSm from "../../components/guide/Divider-sm.astro";
 import Image from "../../components/guide/Image.astro";
@@ -45,14 +46,16 @@ import "../../styles/global.css";
             <LinkDocument link="#section-1" text="Output SU and RPM" />
         </li>
         <li>
-            <LinkDocument link="#test2" text="Boiler with blaze burners" />
+            <LinkDocument link="#section-2" text="Boiler with blaze burners" />
         </li>
         <li>
             <LinkDocument link="#test3" text="Water Input" />
         </li>
     </ol>
     <DividerSm />
-    <!-- SECTION 1 -->
+    <!----------------
+    SECTION 1
+    ----------------->
     <div id="section-1">
         <Title title="1. OUTPUT SU AND RPM" />
         <DividerSm />
@@ -101,7 +104,7 @@ import "../../styles/global.css";
         STEAM ENGINES
         -->
         <div id="steam-engines">
-            <Title title="STEAM ENGINE (BLOCK)" />
+            <Subtitle title="STEAM ENGINE (BLOCK)" />
             <Paragraph>
                 Steam engines are the ones that produce SU; they need to be
                 connected to a boiler and, to transmit the kinetic power they
@@ -148,7 +151,7 @@ import "../../styles/global.css";
         SHAFTS
         -->
         <div id="shafts">
-            <Title title="SHAFTS" />
+            <Subtitle title="SHAFTS" />
             <Paragraph>
                 <LinkDocument link="/guide#shafts-intro" text="Shafts" />
                 are used, as mentioned earlier, to transfer, in this case, the kinetic
@@ -160,7 +163,7 @@ import "../../styles/global.css";
         ENCASED CHAIN DRIVES
         -->
         <div id="encased-chain-drives">
-            <Title title="ENCASED CHAIN DRIVES" />
+            <Subtitle title="ENCASED CHAIN DRIVES" />
             <Paragraph>
                 Encased chain drives are shafts that can transfer kinetic energy
                 both horizontally and vertically.
@@ -194,7 +197,7 @@ import "../../styles/global.css";
         GEARBOX
         -->
         <div id="gearbox">
-            <Title title="HORIZONTAL / VERTICAL TRANSMISSION (GEARBOX)" />
+            <Subtitle title="HORIZONTAL / VERTICAL TRANSMISSION (GEARBOX)" />
             <Paragraph>
                 Gearboxes are used to distribute the kinetic force input on one
                 side to three other sides, but in the opposite direction of
@@ -234,7 +237,7 @@ import "../../styles/global.css";
         SPEEDOMETER/STRESSOMETER
         -->
         <div id="speedometer/stressometer">
-            <Title title="SPEEDOMETER / STRESSOMETER" />
+            <Subtitle title="SPEEDOMETER / STRESSOMETER" />
             <Paragraph>
                 We have already talked about
                 <LinkDocument
@@ -252,6 +255,137 @@ import "../../styles/global.css";
             </Paragraph>
         </div>
     </div>
+    <DividerMd />
+    <!----------------
+    SECTION 2
+    ---------------->
+    <d id="section-2">
+        <Title title="2. BOILER WITH BLAZE BURNERS" />
+        <DividerSm />
+        <Image
+            link="/src/assets/steam-engine/sezione-2-boiler.png"
+            alt="Section 2 image"
+            height="h-1/4"
+        >
+            This is what it looks like
+        </Image>
+        <DividerSm />
+        <Paragraph>
+            This section is where the actual boiler is located, meaning where
+            the water is inserted and, with the help of blaze burners (but also
+            other heat sources), steam is produced, which is then used by the
+            engines.
+            <NewLine />
+            It is made up of 2 components:
+        </Paragraph>
+        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>
+                <LinkDocument link="#fluid-tank" text="72 fluid tank" />
+            </li>
+            <li>
+                <LinkDocument link="#blaze-burners" text="9 blaze burners" />
+            </li>
+        </ul>
+        <DividerSm />
+        <!--
+        FLUID TANKS
+        -->
+        <div id="fluid-tank">
+            <Subtitle title="FLUID TANK" />
+            <Paragraph>
+                As the name suggests, these are the tanks where the input and
+                output are connected.
+                <NewLine />
+                So, you can consider them the “heart” of the boiler, since this is
+                where the water turns into steam, which is then used by the steam
+                engines.
+            </Paragraph>
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/fluid-tank.webp"
+                    alt="Horizontal gearbox image"
+                    height="h-1/4"
+                >
+                    Here’s what a fluid tank looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/fluid-tank-recipe.png"
+                    alt="Fluid tank recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                A boiler is made up of at least 4 tanks, with no real maximum,
+                but it’s useless to go beyond 72 (3x3x8), since adding more
+                doesn’t provide any additional benefits. So, to save materials,
+                72 is the recommended maximum.
+                <NewLine />
+                When a steam engine is placed on top, its appearance changes by adding
+                a “display” that shows the boiler’s level.
+                <NewLine />
+                They’re not only used for steam engines but also for storing water
+                (which is pretty obvious from the name). And if they’re “linked”
+                to a display link, you can see the contents.
+                <NewLine />
+                A single tank can hold up to 8 buckets (8,000 mB). They can be connected
+                with other tanks to form towers up to 32 blocks tall, but the base
+                size depends on how many tanks are placed. This way, you can store
+                up to 2,304 buckets of any fluid.
+                <br />
+                The minimum base area is 1 block, up to a maximum of 3x3.
+                <NewLine />
+                Here are the different heat levels with their corresponding blocks:
+            </Paragraph>
+            <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+                <DividerSm />
+                <li>
+                    Passive (0 heat levels):
+                    <ul
+                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
+                    >
+                        <li>Fire</li>
+                        <li>Campfire</li>
+                        <li>Lava</li>
+                        <li>Magma block</li>
+                        <li>Blaze burner, but lit with flint and steel</li>
+                        <li>Extinguished blaze burner</li>
+                    </ul>
+                </li>
+                <DividerSm />
+                <li>
+                    Active (1 heat level per blaze burner):
+                    <ul
+                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
+                    >
+                        <li>Lit blaze burner</li>
+                    </ul>
+                </li>
+                <DividerSm />
+                <li>
+                    Overclocked (2 heat levels per blaze burner):
+                    <ul
+                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
+                    >
+                        <li>Superheated blaze burner</li>
+                    </ul>
+                </li>
+            </ul>
+            <DividerSm />
+        </div>
+        <div id="blaze-burners">
+            <Subtitle title="BLAZE BURNERS" />
+            <Paragraph>
+                Blaze burners are one of the heat sources for boilers and also
+                the most powerful, on par with the boiler heater from the New
+                Age add-on.
+                <NewLine />
+                To work, they require flammable materials.
+            </Paragraph>
+        </div>
+    </d>
 </Layout>
 
 <script lang="ts" is:inline>
