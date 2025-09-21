@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import LinksFooter from "../components/links/Links-footer.astro";
 import SideBarEntryNode from "../components/guide/Side-bar-entry-node.astro";
+import SideBarEntryNodeInternal from "../components/guide/Side-bar-entry-node-internal.astro";
 import SideBarEntry from "../components/guide/Side-bar-entry.astro";
 ---
 
@@ -63,11 +64,21 @@ import SideBarEntry from "../components/guide/Side-bar-entry.astro";
                                 1.1 WHAT IS KINETIC ENERGY?
                             </a>
                         </SideBarEntry>
+                        <SideBarEntryNodeInternal
+                            title="1.1.1 KINETIC ENERGY GENERATORS"
+                            id="2"
+                        >
+                            <SideBarEntry>
+                                <a href="/guide/steam-engine">
+                                    1.1.1 STEAM ENGINE
+                                </a>
+                            </SideBarEntry>
+                        </SideBarEntryNodeInternal>
                     </SideBarEntryNode>
                 </div>
             </div>
             <div>
-                <div class="ml-5 mt-2.5 xl:w-5xl">
+                <div class="mx-5 my-2.5 xl:w-5xl">
                     <slot />
                 </div>
             </div>

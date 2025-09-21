@@ -1,0 +1,268 @@
+---
+import Layout from "../../layouts/Layout-guide.astro";
+import Paragraph from "../../components/guide/Paragraph.astro";
+import Title from "../../components/guide/Title.astro";
+import DividerMd from "../../components/guide/Divider-md.astro";
+import DividerSm from "../../components/guide/Divider-sm.astro";
+import Image from "../../components/guide/Image.astro";
+import Link from "../../components/guide/Links.astro";
+import LinkDocument from "../../components/guide/Links-in-document.astro";
+import Disclaimer from "../../components/guide/Disclaimer.astro";
+import NewLine from "../../components/guide/New-line.astro";
+import Conclusions from "../../components/guide/Conclusions.astro";
+import "../../styles/global.css";
+---
+
+<Layout title="Guide 'steam engine' - Create Mastery">
+    <Title title="STEAM ENGINE" />
+    <Paragraph>
+        Steam engines are the most powerful source of kinetic energy in the mod.
+        <NewLine />
+        In fact, a max-level steam engine can reach 294,912 SU.
+        <br />
+        Yes, I said levels — the power of steam engines (or boilers) is measured
+        in levels (as well as SU), as you can guess: the higher the level, the more
+        SU and RPM it produces.
+    </Paragraph>
+    <DividerSm />
+    <Image
+        link="/src/assets/steam-engine/boiler-lvl-18.png"
+        alt="Steam engine image"
+        height="h-1/4"
+    >
+        Here’s an example of a max-level boiler
+    </Image>
+    <DividerSm />
+    <Paragraph>
+        At first glance, it may seem confusing, but in reality, it’s very easy
+        to understand.
+        <NewLine />
+        Let’s break it down into sections so it’s easier both to understand and to
+        explain:
+    </Paragraph>
+    <ol class="text-stone-200 text-xl ml-4 list-decimal list-inside">
+        <li>
+            <LinkDocument link="#section-1" text="Output SU and RPM" />
+        </li>
+        <li>
+            <LinkDocument link="#test2" text="Boiler with blaze burners" />
+        </li>
+        <li>
+            <LinkDocument link="#test3" text="Water Input" />
+        </li>
+    </ol>
+    <DividerSm />
+    <!-- SECTION 1 -->
+    <div id="section-1">
+        <Title title="1. OUTPUT SU AND RPM" />
+        <DividerSm />
+        <Image
+            link="/src/assets/steam-engine/sezione-1-output.png"
+            alt="Section 1 image"
+            height="h-1/4"
+        >
+            This is what it looks like
+        </Image>
+        <DividerSm />
+        <Paragraph>
+            This section is the one that will connect to the system and will
+            provide it with power (SU) and, in some cases, also speed (RPM).
+            <NewLine />
+            There are several blocks, each with its own function:
+        </Paragraph>
+        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>
+                <LinkDocument link="#steam-engines" text="18 steam engines" />
+            </li>
+            <li>
+                <LinkDocument link="#shafts" text="18 shafts" />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#encased-chain-drives"
+                    text="9 encased chain drives"
+                />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#gearbox"
+                    text="1 horizontal transmission (gearbox)"
+                />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#speedometer/stressometer"
+                    text="1 speedometer/stressometer"
+                />
+            </li>
+        </ul>
+        <DividerSm />
+        <!--
+        STEAM ENGINES
+        -->
+        <div id="steam-engines">
+            <Title title="STEAM ENGINE (BLOCK)" />
+            <Paragraph>
+                Steam engines are the ones that produce SU; they need to be
+                connected to a boiler and, to transmit the kinetic power they
+                generate, to a shaft.
+                <NewLine />
+                For a level 18 boiler (the maximum level), at least 18 steam engines
+                are needed to generate all the potential kinetic energy. If you place
+                more than 18 engines, the SU of each engine will be:
+                <br />
+                294,912 SU (the maximum a level 18 boiler can generate) divided by
+                the number of steam engines.
+            </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/motore-a-vapore.webp"
+                    alt="Steam engine block image"
+                    height="h-1/4"
+                >
+                    Here’s what a steam engine looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/steam-engine-recipe.png"
+                    alt="Steam engine recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                ChatGPT ha detto: Each steam engine in a boiler is independent
+                from the others. As you can see in the image of the level 18
+                boiler, I placed an engine at the back to power the pumps that
+                feed water into the boiler. In fact, engines can be placed
+                anywhere around the boiler you want.
+                <NewLine />
+                Each individual engine generates between 2,048 SU and 16,384 SU and
+                can run at a minimum of 16 RPM up to a maximum of 64 RPM.
+            </Paragraph>
+            <DividerSm />
+        </div>
+        <!--
+        SHAFTS
+        -->
+        <div id="shafts">
+            <Title title="SHAFTS" />
+            <Paragraph>
+                <LinkDocument link="/guide#shafts-intro" text="Shafts" />
+                are used, as mentioned earlier, to transfer, in this case, the kinetic
+                energy produced by the steam engines to the coated chain drives.
+            </Paragraph>
+            <DividerSm />
+        </div>
+        <!--
+        ENCASED CHAIN DRIVES
+        -->
+        <div id="encased-chain-drives">
+            <Title title="ENCASED CHAIN DRIVES" />
+            <Paragraph>
+                Encased chain drives are shafts that can transfer kinetic energy
+                both horizontally and vertically.
+            </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/encased-chain-drive.webp"
+                    alt="Encased chain drive image"
+                    height="h-1/4"
+                >
+                    Here’s what an encased chain drive looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/encased-chain-drive-recipe.png"
+                    alt="Encased chain drive recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                They are not crafted only with iron nuggets, but also with zinc
+                nuggets. This makes them easier to craft, because if you don’t
+                have one material, you can use the other.
+            </Paragraph>
+            <DividerSm />
+        </div>
+        <!--
+        GEARBOX
+        -->
+        <div id="gearbox">
+            <Title title="HORIZONTAL / VERTICAL TRANSMISSION (GEARBOX)" />
+            <Paragraph>
+                Gearboxes are used to distribute the kinetic force input on one
+                side to three other sides, but in the opposite direction of
+                rotation. Depending on the type (horizontal or vertical), it
+                distributes the rotation; in this case, it distributes it
+                horizontally.
+                <NewLine />
+                It can be connected to a shaft and will not consume any SU, and the
+                other outputs will rotate at the same speed.
+            </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/horizontal-gearbox.webp"
+                    alt="Horizontal gearbox image"
+                    height="h-1/4"
+                >
+                    Here’s what a horizontal gearbox looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/horizontal-gearbox-recipe.png"
+                    alt="Horizontal gearbox recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                To craft the vertical version, simply place the horizontal
+                gearbox in the crafting grid, and you will get the vertical
+                gearbox.
+            </Paragraph>
+            <DividerSm />
+        </div>
+        <!--
+        SPEEDOMETER/STRESSOMETER
+        -->
+        <div id="speedometer/stressometer">
+            <Title title="SPEEDOMETER / STRESSOMETER" />
+            <Paragraph>
+                We have already talked about
+                <LinkDocument
+                    link="/guide/kinetic-energy-intro#stressometer-speedometer-intro"
+                    text="both"
+                />,
+                {" "}but in the following chapters there will be a more detailed
+                guide on how they work.
+                <NewLine />
+                The tachometer will show that the system is running at 48 RPM;
+                <NewLine />
+                While the stressometer will show that the system produces 279,390
+                SU, not 294,912 SU, because there is an engine at the back that takes
+                part of the energy the boiler can generate.
+            </Paragraph>
+        </div>
+    </div>
+</Layout>
+
+<script lang="ts" is:inline>
+    const nodeElement = document.getElementById("id-node-1");
+    const iconElement = document.getElementById("chevronIcon-1");
+    const nodeElement2 = document.getElementById("id-node-2");
+    const iconElement2 = document.getElementById("chevronIcon-2");
+
+    if (nodeElement) nodeElement.style.display = "block";
+    if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+    if (nodeElement2) nodeElement2.style.display = "block";
+    if (iconElement2)
+        iconElement2.style.setProperty("--fa-rotate-angle", "0deg");
+</script>
