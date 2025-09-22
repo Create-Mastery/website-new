@@ -49,7 +49,7 @@ import "../../styles/global.css";
             <LinkDocument link="#section-2" text="Boiler with blaze burners" />
         </li>
         <li>
-            <LinkDocument link="#test3" text="Water Input" />
+            <LinkDocument link="#section-3" text="Water Input" />
         </li>
     </ol>
     <DividerSm />
@@ -259,7 +259,7 @@ import "../../styles/global.css";
     <!----------------
     SECTION 2
     ---------------->
-    <d id="section-2">
+    <div id="section-2">
         <Title title="2. BOILER WITH BLAZE BURNERS" />
         <DividerSm />
         <Image
@@ -300,6 +300,7 @@ import "../../styles/global.css";
                 where the water turns into steam, which is then used by the steam
                 engines.
             </Paragraph>
+            <DividerSm />
             <div class="flex md:flex-row flex-col gap-2 w-fit">
                 <Image
                     link="/src/assets/blocks/fluid-tank.webp"
@@ -384,8 +385,214 @@ import "../../styles/global.css";
                 <NewLine />
                 To work, they require flammable materials.
             </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/empty-blaze-burner.webp"
+                    alt="Blaze burner image"
+                    height="h-1/4"
+                >
+                    Here’s what an empty blaze burner looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/blaze-burner-recipe.png"
+                    alt="Blaze burner recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                To place the blaze inside the empty “cage,” you need to
+                right-click either on a blaze or on a blaze spawner, so it can
+                also be done in Peaceful mode.
+                <NewLine />
+                Blaze Burners have 3 stages:
+            </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/blocks/blaze-burner-smouldering.webp"
+                    alt="Blaze burner smouldering"
+                    height="h-1/4"
+                >
+                    This is the smouldering stage
+                </Image>
+                <Image
+                    link="/src/assets/blocks/blaze-burner-heated.webp"
+                    alt="Blaze burner heated"
+                    height="h-1/4"
+                >
+                    This is the heated stage
+                </Image>
+                <Image
+                    link="/src/assets/blocks/blaze-burner-super-heated.webp"
+                    alt="Blaze burner superheated"
+                    height="h-1/4"
+                >
+                    This is the superheated stage
+                </Image>
+            </div>
+            <DividerSm />
+            <Subtitle title="SMOULDERING" />
+            <Paragraph>
+                “Smouldering” means when the Blaze Burner is passive, so when it
+                hasn’t been given any fuel to consume. Even so, it can still
+                provide a very small amount of heat to boilers.
+                <NewLine />
+                This stage provides a passive heat level (similar to a campfire).
+            </Paragraph>
+            <DividerSm />
+            <Subtitle title="HEATED" />
+            <Paragraph>
+                “Heated” is when the Blaze Burner has been fueled with a
+                flammable material (e.g. coal, wood, lava, etc.). For this
+                stage, the best material to use is lava because it lasts a long
+                time and is very simple to automate with Create.
+                <NewLine />
+                This stage provides one heat level for the Blaze Burner.
+            </Paragraph>
+            <DividerSm />
+            <Subtitle title="SUPERHEATED" />
+            <Paragraph>
+                This is the most powerful stage of all.
+                <br />
+                To reach this level, a special item is required: the Blaze Cake.
+            </Paragraph>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/items/blaze-cake-base.webp"
+                    alt="Blaze cake base image"
+                    height="h-1/4"
+                >
+                    Here’s what a blaze cake base looks like
+                </Image>
+                <Image
+                    link="/src/assets/recipes/blaze-cake-base-recipe.png"
+                    alt="Blaze cake base recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <div class="flex md:flex-row flex-col gap-2 w-fit">
+                <Image
+                    link="/src/assets/items/blaze-cake.webp"
+                    alt="Blaze cake image"
+                    height="h-1/4"
+                >
+                    This is the blaze cake
+                </Image>
+                <Image
+                    link="/src/assets/recipes/blaze-cake-recipe.png"
+                    alt="Blaze cake recipe"
+                    height="h-1/4"
+                >
+                    And this is the recipe
+                </Image>
+            </div>
+            <DividerSm />
+            <Paragraph>
+                With this stage, all Mixer recipes are unlocked — in particular,
+                it enables the ability to craft Brass.
+                <NewLine />
+                This stage provides 2 heat levels per Blaze Burner.
+            </Paragraph>
+            <DividerSm />
+            <Subtitle title="OTHER USES" />
+            <Paragraph>
+                Blaze Burners are not only used as a heat source for boilers,
+                but also for Bulk Smoking and Bulk Haunting. To use them in
+                these cases, you need to light the empty cage with Flint and
+                Steel so that a Campfire flame appears.
+                <NewLine />
+                For Bulk Haunting, you need to feed it either Soul Sand or Soul Soil,
+                which will create a blue Campfire flame inside the cage.
+            </Paragraph>
         </div>
-    </d>
+    </div>
+    <DividerMd />
+    <!----------------
+    SECTION 3
+    ---------------->
+    <div id="section-3">
+        <Title title="3. WATER INPUT" />
+        <DividerSm />
+        <Image
+            link="/src/assets/steam-engine/sezione-3-input.png"
+            alt="Water input image"
+            height="h-1/4"
+        >
+            This is what it looks like
+        </Image>
+        <DividerSm />
+        <Paragraph>
+            This part is the final one — but not the least important — it’s
+            where the water is inserted.
+            <NewLine />
+            However, this design is not very efficient and doesn’t perform its function
+            very well, so we decided to analyze another design instead, which is
+            more efficient and properly does what it’s supposed to do.
+        </Paragraph>
+        <DividerSm />
+        <Image
+            link="/src/assets/steam-engine/sezione-3-better-input.png"
+            alt="Better water input image"
+            height="h-1/4"
+        >
+            This is what it looks like
+        </Image>
+        <DividerSm />
+        <Paragraph>
+            The difference between the first and the second design is only one —
+            but a very important one: the “buffer” fills up. It may seem like a
+            small detail, but it’s actually super useful because this design
+            truly does what it’s meant to do: serve as a backup.
+            <NewLine />
+            It’s made up of several blocks, each one crucial:
+        </Paragraph>
+        <DividerSm />
+        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>
+                <LinkDocument link="#water-tank-input" text="18 water tanks" />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#steam-engine-input"
+                    text="1 steam engine"
+                />
+            </li>
+            <li>
+                <LinkDocument link="#shafts-input" text="3 shafts" />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#rotation-speed-controllers"
+                    text="2 rotation speed controllers"
+                />
+            </li>
+            <li>
+                <LinkDocument link="#large-cogs" text="2 large cogs" />
+            </li>
+            <li>
+                <LinkDocument link="#cogs" text="6 cogs" />
+            </li>
+            <li>
+                <LinkDocument
+                    link="#mechanical-pumps"
+                    text="4 mechanical pumps"
+                />
+            </li>
+            <li>
+                <LinkDocument link="#copper-pipes" text="4 copper pipes" />
+            </li>
+        </ul>
+        <DividerSm />
+        <Subtitle title="WATER TANKS" />
+    </div>
 </Layout>
 
 <script lang="ts" is:inline>
