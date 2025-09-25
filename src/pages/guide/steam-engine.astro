@@ -15,601 +15,583 @@ import "../../styles/global.css";
 ---
 
 <Layout title="Guide 'steam engine' - Create Mastery">
-    <Title title="STEAM ENGINE" />
-    <Paragraph>
-        Steam engines are the most powerful source of kinetic energy in the mod.
-        <NewLine />
-        In fact, a max-level steam engine can reach 294,912 SU.
-        <br />
-        Yes, I said levels — the power of steam engines (or boilers) is measured
-        in levels (as well as SU), as you can guess: the higher the level, the more
-        SU and RPM it produces.
-    </Paragraph>
+  <Title title="STEAM ENGINE" />
+  <Paragraph>
+    Steam engines are the most powerful source of kinetic energy in the mod.
+    <NewLine />
+    In fact, a max-level steam engine can reach 294,912 SU.
+    <br />
+    Yes, I said levels — the power of steam engines (or boilers) is measured in levels
+    (as well as SU), as you can guess: the higher the level, the more SU and RPM
+    it produces.
+  </Paragraph>
+  <DividerSm />
+  <Image
+    link="/src/assets/steam-engine/boiler-lvl-18.png"
+    alt="Steam engine image"
+    height="h-1/4"
+  >
+    Here’s an example of a max-level boiler
+  </Image>
+  <DividerSm />
+  <Paragraph>
+    At first glance, it may seem confusing, but in reality, it’s very easy to
+    understand.
+    <NewLine />
+    Let’s break it down into sections so it’s easier both to understand and to explain:
+  </Paragraph>
+  <ol class="text-stone-200 text-xl ml-4 list-decimal list-inside">
+    <li>
+      <LinkDocument link="#section-1" text="Output SU and RPM" />
+    </li>
+    <li>
+      <LinkDocument link="#section-2" text="Boiler with blaze burners" />
+    </li>
+    <li>
+      <LinkDocument link="#section-3" text="Water Input" />
+    </li>
+  </ol>
+  <DividerSm />
+  <!----------------
+    SECTION 1
+    ----------------->
+  <div id="section-1">
+    <Title title="1. OUTPUT SU AND RPM" />
     <DividerSm />
     <Image
-        link="/src/assets/steam-engine/boiler-lvl-18.png"
-        alt="Steam engine image"
-        height="h-1/4"
+      link="/src/assets/steam-engine/sezione-1-output.png"
+      alt="Section 1 image"
+      height="h-1/4"
     >
-        Here’s an example of a max-level boiler
+      This is what it looks like
     </Image>
     <DividerSm />
     <Paragraph>
-        At first glance, it may seem confusing, but in reality, it’s very easy
-        to understand.
-        <NewLine />
-        Let’s break it down into sections so it’s easier both to understand and to
-        explain:
+      This section is the one that will connect to the system and will provide
+      it with power (SU) and, in some cases, also speed (RPM).
+      <NewLine />
+      There are several blocks, each with its own function:
     </Paragraph>
-    <ol class="text-stone-200 text-xl ml-4 list-decimal list-inside">
-        <li>
-            <LinkDocument link="#section-1" text="Output SU and RPM" />
-        </li>
-        <li>
-            <LinkDocument link="#section-2" text="Boiler with blaze burners" />
-        </li>
-        <li>
-            <LinkDocument link="#section-3" text="Water Input" />
-        </li>
-    </ol>
+    <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>
+        <LinkDocument link="#steam-engines" text="18 steam engines" />
+      </li>
+      <li>
+        <LinkDocument link="#shafts" text="18 shafts" />
+      </li>
+      <li>
+        <LinkDocument
+          link="#encased-chain-drives"
+          text="9 encased chain drives"
+        />
+      </li>
+      <li>
+        <LinkDocument
+          link="#gearbox"
+          text="1 horizontal transmission (gearbox)"
+        />
+      </li>
+      <li>
+        <LinkDocument
+          link="#speedometer/stressometer"
+          text="1 speedometer/stressometer"
+        />
+      </li>
+    </ul>
     <DividerSm />
-    <!----------------
-    SECTION 1
-    ----------------->
-    <div id="section-1">
-        <Title title="1. OUTPUT SU AND RPM" />
-        <DividerSm />
-        <Image
-            link="/src/assets/steam-engine/sezione-1-output.png"
-            alt="Section 1 image"
-            height="h-1/4"
-        >
-            This is what it looks like
-        </Image>
-        <DividerSm />
-        <Paragraph>
-            This section is the one that will connect to the system and will
-            provide it with power (SU) and, in some cases, also speed (RPM).
-            <NewLine />
-            There are several blocks, each with its own function:
-        </Paragraph>
-        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
-            <li>
-                <LinkDocument link="#steam-engines" text="18 steam engines" />
-            </li>
-            <li>
-                <LinkDocument link="#shafts" text="18 shafts" />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#encased-chain-drives"
-                    text="9 encased chain drives"
-                />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#gearbox"
-                    text="1 horizontal transmission (gearbox)"
-                />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#speedometer/stressometer"
-                    text="1 speedometer/stressometer"
-                />
-            </li>
-        </ul>
-        <DividerSm />
-        <!--
+    <!--
         STEAM ENGINES
         -->
-        <div id="steam-engines">
-            <Subtitle title="STEAM ENGINE (BLOCK)" />
-            <Paragraph>
-                Steam engines are the ones that produce SU; they need to be
-                connected to a boiler and, to transmit the kinetic power they
-                generate, to a shaft.
-                <NewLine />
-                For a level 18 boiler (the maximum level), at least 18 steam engines
-                are needed to generate all the potential kinetic energy. If you place
-                more than 18 engines, the SU of each engine will be:
-                <br />
-                294,912 SU (the maximum a level 18 boiler can generate) divided by
-                the number of steam engines.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/motore-a-vapore.webp"
-                    alt="Steam engine block image"
-                    height="h-1/4"
-                >
-                    Here’s what a steam engine looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/steam-engine-recipe.png"
-                    alt="Steam engine recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                ChatGPT ha detto: Each steam engine in a boiler is independent
-                from the others. As you can see in the image of the level 18
-                boiler, I placed an engine at the back to power the pumps that
-                feed water into the boiler. In fact, engines can be placed
-                anywhere around the boiler you want.
-                <NewLine />
-                Each individual engine generates between 2,048 SU and 16,384 SU and
-                can run at a minimum of 16 RPM up to a maximum of 64 RPM.
-            </Paragraph>
-            <DividerSm />
-        </div>
-        <!--
+    <div id="steam-engines">
+      <Subtitle title="STEAM ENGINE (BLOCK)" />
+      <Paragraph>
+        Steam engines are the ones that produce SU; they need to be connected to
+        a boiler and, to transmit the kinetic power they generate, to a shaft.
+        <NewLine />
+        For a level 18 boiler (the maximum level), at least 18 steam engines are
+        needed to generate all the potential kinetic energy. If you place more than
+        18 engines, the SU of each engine will be:
+        <br />
+        294,912 SU (the maximum a level 18 boiler can generate) divided by the number
+        of steam engines.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/motore-a-vapore.webp"
+          alt="Steam engine block image"
+          height="h-1/4"
+        >
+          Here’s what a steam engine looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/steam-engine-recipe.png"
+          alt="Steam engine recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        ChatGPT ha detto: Each steam engine in a boiler is independent from the
+        others. As you can see in the image of the level 18 boiler, I placed an
+        engine at the back to power the pumps that feed water into the boiler.
+        In fact, engines can be placed anywhere around the boiler you want.
+        <NewLine />
+        Each individual engine generates between 2,048 SU and 16,384 SU and can run
+        at a minimum of 16 RPM up to a maximum of 64 RPM.
+      </Paragraph>
+      <DividerSm />
+    </div>
+    <!--
         SHAFTS
         -->
-        <div id="shafts">
-            <Subtitle title="SHAFTS" />
-            <Paragraph>
-                <LinkDocument link="/guide#shafts-intro" text="Shafts" />
-                are used, as mentioned earlier, to transfer, in this case, the kinetic
-                energy produced by the steam engines to the coated chain drives.
-            </Paragraph>
-            <DividerSm />
-        </div>
-        <!--
+    <div id="shafts">
+      <Subtitle title="SHAFTS" />
+      <Paragraph>
+        <LinkDocument link="/guide#shafts-intro" text="Shafts" />
+        are used, as mentioned earlier, to transfer, in this case, the kinetic energy
+        produced by the steam engines to the coated chain drives.
+      </Paragraph>
+      <DividerSm />
+    </div>
+    <!--
         ENCASED CHAIN DRIVES
         -->
-        <div id="encased-chain-drives">
-            <Subtitle title="ENCASED CHAIN DRIVES" />
-            <Paragraph>
-                Encased chain drives are shafts that can transfer kinetic energy
-                both horizontally and vertically.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/encased-chain-drive.webp"
-                    alt="Encased chain drive image"
-                    height="h-1/4"
-                >
-                    Here’s what an encased chain drive looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/encased-chain-drive-recipe.png"
-                    alt="Encased chain drive recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                They are not crafted only with iron nuggets, but also with zinc
-                nuggets. This makes them easier to craft, because if you don’t
-                have one material, you can use the other.
-            </Paragraph>
-            <DividerSm />
-        </div>
-        <!--
+    <div id="encased-chain-drives">
+      <Subtitle title="ENCASED CHAIN DRIVES" />
+      <Paragraph>
+        Encased chain drives are shafts that can transfer kinetic energy both
+        horizontally and vertically.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/encased-chain-drive.webp"
+          alt="Encased chain drive image"
+          height="h-1/4"
+        >
+          Here’s what an encased chain drive looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/encased-chain-drive-recipe.png"
+          alt="Encased chain drive recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        They are not crafted only with iron nuggets, but also with zinc nuggets.
+        This makes them easier to craft, because if you don’t have one material,
+        you can use the other.
+      </Paragraph>
+      <DividerSm />
+    </div>
+    <!--
         GEARBOX
         -->
-        <div id="gearbox">
-            <Subtitle title="HORIZONTAL / VERTICAL TRANSMISSION (GEARBOX)" />
-            <Paragraph>
-                Gearboxes are used to distribute the kinetic force input on one
-                side to three other sides, but in the opposite direction of
-                rotation. Depending on the type (horizontal or vertical), it
-                distributes the rotation; in this case, it distributes it
-                horizontally.
-                <NewLine />
-                It can be connected to a shaft and will not consume any SU, and the
-                other outputs will rotate at the same speed.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/horizontal-gearbox.webp"
-                    alt="Horizontal gearbox image"
-                    height="h-1/4"
-                >
-                    Here’s what a horizontal gearbox looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/horizontal-gearbox-recipe.png"
-                    alt="Horizontal gearbox recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                To craft the vertical version, simply place the horizontal
-                gearbox in the crafting grid, and you will get the vertical
-                gearbox.
-            </Paragraph>
-            <DividerSm />
-        </div>
-        <!--
+    <div id="gearbox">
+      <Subtitle title="HORIZONTAL / VERTICAL TRANSMISSION (GEARBOX)" />
+      <Paragraph>
+        Gearboxes are used to distribute the kinetic force input on one side to
+        three other sides, but in the opposite direction of rotation. Depending
+        on the type (horizontal or vertical), it distributes the rotation; in
+        this case, it distributes it horizontally.
+        <NewLine />
+        It can be connected to a shaft and will not consume any SU, and the other
+        outputs will rotate at the same speed.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/horizontal-gearbox.webp"
+          alt="Horizontal gearbox image"
+          height="h-1/4"
+        >
+          Here’s what a horizontal gearbox looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/horizontal-gearbox-recipe.png"
+          alt="Horizontal gearbox recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        To craft the vertical version, simply place the horizontal gearbox in
+        the crafting grid, and you will get the vertical gearbox.
+      </Paragraph>
+      <DividerSm />
+    </div>
+    <!--
         SPEEDOMETER/STRESSOMETER
         -->
-        <div id="speedometer/stressometer">
-            <Subtitle title="SPEEDOMETER / STRESSOMETER" />
-            <Paragraph>
-                We have already talked about
-                <LinkDocument
-                    link="/guide/kinetic-energy-intro#stressometer-speedometer-intro"
-                    text="both"
-                />,
-                {" "}but in the following chapters there will be a more detailed
-                guide on how they work.
-                <NewLine />
-                The tachometer will show that the system is running at 48 RPM;
-                <NewLine />
-                While the stressometer will show that the system produces 279,390
-                SU, not 294,912 SU, because there is an engine at the back that takes
-                part of the energy the boiler can generate.
-            </Paragraph>
-        </div>
+    <div id="speedometer/stressometer">
+      <Subtitle title="SPEEDOMETER / STRESSOMETER" />
+      <Paragraph>
+        We have already talked about
+        <LinkDocument
+          link="/guide/kinetic-energy-intro#stressometer-speedometer-intro"
+          text="both"
+        />,
+        {" "}but in the following chapters there will be a more detailed guide
+        on how they work.
+        <NewLine />
+        The tachometer will show that the system is running at 48 RPM;
+        <NewLine />
+        While the stressometer will show that the system produces 279,390 SU, not
+        294,912 SU, because there is an engine at the back that takes part of the
+        energy the boiler can generate.
+      </Paragraph>
     </div>
-    <DividerMd />
-    <!----------------
+  </div>
+  <DividerMd />
+  <!----------------
     SECTION 2
     ---------------->
-    <div id="section-2">
-        <Title title="2. BOILER WITH BLAZE BURNERS" />
-        <DividerSm />
-        <Image
-            link="/src/assets/steam-engine/sezione-2-boiler.png"
-            alt="Section 2 image"
-            height="h-1/4"
-        >
-            This is what it looks like
-        </Image>
-        <DividerSm />
-        <Paragraph>
-            This section is where the actual boiler is located, meaning where
-            the water is inserted and, with the help of blaze burners (but also
-            other heat sources), steam is produced, which is then used by the
-            engines.
-            <NewLine />
-            It is made up of 2 components:
-        </Paragraph>
-        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
-            <li>
-                <LinkDocument link="#fluid-tank" text="72 fluid tank" />
-            </li>
-            <li>
-                <LinkDocument link="#blaze-burners" text="9 blaze burners" />
-            </li>
-        </ul>
-        <DividerSm />
-        <!--
+  <div id="section-2">
+    <Title title="2. BOILER WITH BLAZE BURNERS" />
+    <DividerSm />
+    <Image
+      link="/src/assets/steam-engine/sezione-2-boiler.png"
+      alt="Section 2 image"
+      height="h-1/4"
+    >
+      This is what it looks like
+    </Image>
+    <DividerSm />
+    <Paragraph>
+      This section is where the actual boiler is located, meaning where the
+      water is inserted and, with the help of blaze burners (but also other heat
+      sources), steam is produced, which is then used by the engines.
+      <NewLine />
+      It is made up of 2 components:
+    </Paragraph>
+    <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>
+        <LinkDocument link="#fluid-tank" text="72 fluid tank" />
+      </li>
+      <li>
+        <LinkDocument link="#blaze-burners" text="9 blaze burners" />
+      </li>
+    </ul>
+    <DividerSm />
+    <!--
         FLUID TANKS
         -->
-        <div id="fluid-tank">
-            <Subtitle title="FLUID TANK" />
-            <Paragraph>
-                As the name suggests, these are the tanks where the input and
-                output are connected.
-                <NewLine />
-                So, you can consider them the “heart” of the boiler, since this is
-                where the water turns into steam, which is then used by the steam
-                engines.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/fluid-tank.webp"
-                    alt="Horizontal gearbox image"
-                    height="h-1/4"
-                >
-                    Here’s what a fluid tank looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/fluid-tank-recipe.png"
-                    alt="Fluid tank recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                A boiler is made up of at least 4 tanks, with no real maximum,
-                but it’s useless to go beyond 72 (3x3x8), since adding more
-                doesn’t provide any additional benefits. So, to save materials,
-                72 is the recommended maximum.
-                <NewLine />
-                When a steam engine is placed on top, its appearance changes by adding
-                a “display” that shows the boiler’s level.
-                <NewLine />
-                They’re not only used for steam engines but also for storing water
-                (which is pretty obvious from the name). And if they’re “linked”
-                to a display link, you can see the contents.
-                <NewLine />
-                A single tank can hold up to 8 buckets (8,000 mB). They can be connected
-                with other tanks to form towers up to 32 blocks tall, but the base
-                size depends on how many tanks are placed. This way, you can store
-                up to 2,304 buckets of any fluid.
-                <br />
-                The minimum base area is 1 block, up to a maximum of 3x3.
-                <NewLine />
-                Here are the different heat levels with their corresponding blocks:
-            </Paragraph>
-            <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
-                <DividerSm />
-                <li>
-                    Passive (0 heat levels):
-                    <ul
-                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
-                    >
-                        <li>Fire</li>
-                        <li>Campfire</li>
-                        <li>Lava</li>
-                        <li>Magma block</li>
-                        <li>Blaze burner, but lit with flint and steel</li>
-                        <li>Extinguished blaze burner</li>
-                    </ul>
-                </li>
-                <DividerSm />
-                <li>
-                    Active (1 heat level per blaze burner):
-                    <ul
-                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
-                    >
-                        <li>Lit blaze burner</li>
-                    </ul>
-                </li>
-                <DividerSm />
-                <li>
-                    Overclocked (2 heat levels per blaze burner):
-                    <ul
-                        class="text-stone-200 text-xl ml-4 list-disc list-inside"
-                    >
-                        <li>Superheated blaze burner</li>
-                    </ul>
-                </li>
-            </ul>
-            <DividerSm />
-        </div>
-        <div id="blaze-burners">
-            <Subtitle title="BLAZE BURNERS" />
-            <Paragraph>
-                Blaze burners are one of the heat sources for boilers and also
-                the most powerful, on par with the boiler heater from the New
-                Age add-on.
-                <NewLine />
-                To work, they require flammable materials.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/empty-blaze-burner.webp"
-                    alt="Blaze burner image"
-                    height="h-1/4"
-                >
-                    Here’s what an empty blaze burner looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/blaze-burner-recipe.png"
-                    alt="Blaze burner recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                To place the blaze inside the empty “cage,” you need to
-                right-click either on a blaze or on a blaze spawner, so it can
-                also be done in Peaceful mode.
-                <NewLine />
-                Blaze Burners have 3 stages:
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/blocks/blaze-burner-smouldering.webp"
-                    alt="Blaze burner smouldering"
-                    height="h-1/4"
-                >
-                    This is the smouldering stage
-                </Image>
-                <Image
-                    link="/src/assets/blocks/blaze-burner-heated.webp"
-                    alt="Blaze burner heated"
-                    height="h-1/4"
-                >
-                    This is the heated stage
-                </Image>
-                <Image
-                    link="/src/assets/blocks/blaze-burner-super-heated.webp"
-                    alt="Blaze burner superheated"
-                    height="h-1/4"
-                >
-                    This is the superheated stage
-                </Image>
-            </div>
-            <DividerSm />
-            <Subtitle title="SMOULDERING" />
-            <Paragraph>
-                “Smouldering” means when the Blaze Burner is passive, so when it
-                hasn’t been given any fuel to consume. Even so, it can still
-                provide a very small amount of heat to boilers.
-                <NewLine />
-                This stage provides a passive heat level (similar to a campfire).
-            </Paragraph>
-            <DividerSm />
-            <Subtitle title="HEATED" />
-            <Paragraph>
-                “Heated” is when the Blaze Burner has been fueled with a
-                flammable material (e.g. coal, wood, lava, etc.). For this
-                stage, the best material to use is lava because it lasts a long
-                time and is very simple to automate with Create.
-                <NewLine />
-                This stage provides one heat level for the Blaze Burner.
-            </Paragraph>
-            <DividerSm />
-            <Subtitle title="SUPERHEATED" />
-            <Paragraph>
-                This is the most powerful stage of all.
-                <br />
-                To reach this level, a special item is required: the Blaze Cake.
-            </Paragraph>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/items/blaze-cake-base.webp"
-                    alt="Blaze cake base image"
-                    height="h-1/4"
-                >
-                    Here’s what a blaze cake base looks like
-                </Image>
-                <Image
-                    link="/src/assets/recipes/blaze-cake-base-recipe.png"
-                    alt="Blaze cake base recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <div class="flex md:flex-row flex-col gap-2 w-fit">
-                <Image
-                    link="/src/assets/items/blaze-cake.webp"
-                    alt="Blaze cake image"
-                    height="h-1/4"
-                >
-                    This is the blaze cake
-                </Image>
-                <Image
-                    link="/src/assets/recipes/blaze-cake-recipe.png"
-                    alt="Blaze cake recipe"
-                    height="h-1/4"
-                >
-                    And this is the recipe
-                </Image>
-            </div>
-            <DividerSm />
-            <Paragraph>
-                With this stage, all Mixer recipes are unlocked — in particular,
-                it enables the ability to craft Brass.
-                <NewLine />
-                This stage provides 2 heat levels per Blaze Burner.
-            </Paragraph>
-            <DividerSm />
-            <Subtitle title="OTHER USES" />
-            <Paragraph>
-                Blaze Burners are not only used as a heat source for boilers,
-                but also for Bulk Smoking and Bulk Haunting. To use them in
-                these cases, you need to light the empty cage with Flint and
-                Steel so that a Campfire flame appears.
-                <NewLine />
-                For Bulk Haunting, you need to feed it either Soul Sand or Soul Soil,
-                which will create a blue Campfire flame inside the cage.
-            </Paragraph>
-        </div>
+    <div id="fluid-tank">
+      <Subtitle title="FLUID TANK" />
+      <Paragraph>
+        As the name suggests, these are the tanks where the input and output are
+        connected.
+        <NewLine />
+        So, you can consider them the “heart” of the boiler, since this is where
+        the water turns into steam, which is then used by the steam engines.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/fluid-tank.webp"
+          alt="Horizontal gearbox image"
+          height="h-1/4"
+        >
+          Here’s what a fluid tank looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/fluid-tank-recipe.png"
+          alt="Fluid tank recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        A boiler is made up of at least 4 tanks, with no real maximum, but it’s
+        useless to go beyond 72 (3x3x8), since adding more doesn’t provide any
+        additional benefits. So, to save materials, 72 is the recommended
+        maximum.
+        <NewLine />
+        When a steam engine is placed on top, its appearance changes by adding a
+        “display” that shows the boiler’s level.
+        <NewLine />
+        They’re not only used for steam engines but also for storing water (which
+        is pretty obvious from the name). And if they’re “linked” to a display link,
+        you can see the contents.
+        <NewLine />
+        A single tank can hold up to 8 buckets (8,000 mB). They can be connected
+        with other tanks to form towers up to 32 blocks tall, but the base size depends
+        on how many tanks are placed. This way, you can store up to 2,304 buckets
+        of any fluid.
+        <br />
+        The minimum base area is 1 block, up to a maximum of 3x3.
+        <NewLine />
+        Here are the different heat levels with their corresponding blocks:
+      </Paragraph>
+      <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+        <DividerSm />
+        <li>
+          Passive (0 heat levels):
+          <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>Fire</li>
+            <li>Campfire</li>
+            <li>Lava</li>
+            <li>Magma block</li>
+            <li>Blaze burner, but lit with flint and steel</li>
+            <li>Extinguished blaze burner</li>
+          </ul>
+        </li>
+        <DividerSm />
+        <li>
+          Active (1 heat level per blaze burner):
+          <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>Lit blaze burner</li>
+          </ul>
+        </li>
+        <DividerSm />
+        <li>
+          Overclocked (2 heat levels per blaze burner):
+          <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+            <li>Superheated blaze burner</li>
+          </ul>
+        </li>
+      </ul>
+      <DividerSm />
     </div>
-    <DividerMd />
-    <!----------------
+    <div id="blaze-burners">
+      <Subtitle title="BLAZE BURNERS" />
+      <Paragraph>
+        Blaze burners are one of the heat sources for boilers and also the most
+        powerful, on par with the boiler heater from the New Age add-on.
+        <NewLine />
+        To work, they require flammable materials.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/empty-blaze-burner.webp"
+          alt="Blaze burner image"
+          height="h-1/4"
+        >
+          Here’s what an empty blaze burner looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/blaze-burner-recipe.png"
+          alt="Blaze burner recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        To place the blaze inside the empty “cage,” you need to right-click
+        either on a blaze or on a blaze spawner, so it can also be done in
+        Peaceful mode.
+        <NewLine />
+        Blaze Burners have 3 stages:
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/blaze-burner-smouldering.webp"
+          alt="Blaze burner smouldering"
+          height="h-1/4"
+        >
+          This is the smouldering stage
+        </Image>
+        <Image
+          link="/src/assets/blocks/blaze-burner-heated.webp"
+          alt="Blaze burner heated"
+          height="h-1/4"
+        >
+          This is the heated stage
+        </Image>
+        <Image
+          link="/src/assets/blocks/blaze-burner-super-heated.webp"
+          alt="Blaze burner superheated"
+          height="h-1/4"
+        >
+          This is the superheated stage
+        </Image>
+      </div>
+      <DividerSm />
+      <Subtitle title="SMOULDERING" />
+      <Paragraph>
+        “Smouldering” means when the Blaze Burner is passive, so when it hasn’t
+        been given any fuel to consume. Even so, it can still provide a very
+        small amount of heat to boilers.
+        <NewLine />
+        This stage provides a passive heat level (similar to a campfire).
+      </Paragraph>
+      <DividerSm />
+      <Subtitle title="HEATED" />
+      <Paragraph>
+        “Heated” is when the Blaze Burner has been fueled with a flammable
+        material (e.g. coal, wood, lava, etc.). For this stage, the best
+        material to use is lava because it lasts a long time and is very simple
+        to automate with Create.
+        <NewLine />
+        This stage provides one heat level for the Blaze Burner.
+      </Paragraph>
+      <DividerSm />
+      <Subtitle title="SUPERHEATED" />
+      <Paragraph>
+        This is the most powerful stage of all.
+        <br />
+        To reach this level, a special item is required: the Blaze Cake.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/items/blaze-cake-base.webp"
+          alt="Blaze cake base image"
+          height="h-1/4"
+        >
+          Here’s what a blaze cake base looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/blaze-cake-base-recipe.png"
+          alt="Blaze cake base recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/items/blaze-cake.webp"
+          alt="Blaze cake image"
+          height="h-1/4"
+        >
+          This is the blaze cake
+        </Image>
+        <Image
+          link="/src/assets/recipes/blaze-cake-recipe.png"
+          alt="Blaze cake recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        With this stage, all Mixer recipes are unlocked — in particular, it
+        enables the ability to craft Brass.
+        <NewLine />
+        This stage provides 2 heat levels per Blaze Burner.
+      </Paragraph>
+      <DividerSm />
+      <Subtitle title="OTHER USES" />
+      <Paragraph>
+        Blaze Burners are not only used as a heat source for boilers, but also
+        for Bulk Smoking and Bulk Haunting. To use them in these cases, you need
+        to light the empty cage with Flint and Steel so that a Campfire flame
+        appears.
+        <NewLine />
+        For Bulk Haunting, you need to feed it either Soul Sand or Soul Soil, which
+        will create a blue Campfire flame inside the cage.
+      </Paragraph>
+    </div>
+  </div>
+  <DividerMd />
+  <!----------------
     SECTION 3
     ---------------->
-    <div id="section-3">
-        <Title title="3. WATER INPUT" />
-        <DividerSm />
-        <Image
-            link="/src/assets/steam-engine/sezione-3-input.png"
-            alt="Water input image"
-            height="h-1/4"
-        >
-            This is what it looks like
-        </Image>
-        <DividerSm />
-        <Paragraph>
-            This part is the final one — but not the least important — it’s
-            where the water is inserted.
-            <NewLine />
-            However, this design is not very efficient and doesn’t perform its function
-            very well, so we decided to analyze another design instead, which is
-            more efficient and properly does what it’s supposed to do.
-        </Paragraph>
-        <DividerSm />
-        <Image
-            link="/src/assets/steam-engine/sezione-3-better-input.png"
-            alt="Better water input image"
-            height="h-1/4"
-        >
-            This is what it looks like
-        </Image>
-        <DividerSm />
-        <Paragraph>
-            The difference between the first and the second design is only one —
-            but a very important one: the “buffer” fills up. It may seem like a
-            small detail, but it’s actually super useful because this design
-            truly does what it’s meant to do: serve as a backup.
-            <NewLine />
-            It’s made up of several blocks, each one crucial:
-        </Paragraph>
-        <DividerSm />
-        <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
-            <li>
-                <LinkDocument link="#water-tank-input" text="18 water tanks" />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#steam-engine-input"
-                    text="1 steam engine"
-                />
-            </li>
-            <li>
-                <LinkDocument link="#shafts-input" text="3 shafts" />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#rotation-speed-controllers"
-                    text="2 rotation speed controllers"
-                />
-            </li>
-            <li>
-                <LinkDocument link="#large-cogs" text="2 large cogs" />
-            </li>
-            <li>
-                <LinkDocument link="#cogs" text="6 cogs" />
-            </li>
-            <li>
-                <LinkDocument
-                    link="#mechanical-pumps"
-                    text="4 mechanical pumps"
-                />
-            </li>
-            <li>
-                <LinkDocument link="#copper-pipes" text="4 copper pipes" />
-            </li>
-        </ul>
-        <DividerSm />
-        <Subtitle title="WATER TANKS" />
-        <Paragraph>
-            In this case, the tanks serve as a buffer.
-            <NewLine />
-            This part is extremely important because if, for any reason, the infinite water sources disappear, there will still be a bit of water that keeps the boiler running longer.
-            In combination with the rear engine, this allows the boiler to never shut off—except when, for any reason, there are no more infinite water sources, in which case the operation will only be temporary.
-        </Paragraph>
-    </div>
+  <div id="section-3">
+    <Title title="3. WATER INPUT" />
+    <DividerSm />
+    <Image
+      link="/src/assets/steam-engine/sezione-3-input.png"
+      alt="Water input image"
+      height="h-1/4"
+    >
+      This is what it looks like
+    </Image>
+    <DividerSm />
+    <Paragraph>
+      This part is the final one — but not the least important — it’s where the
+      water is inserted.
+      <NewLine />
+      However, this design is not very efficient and doesn’t perform its function
+      very well, so we decided to analyze another design instead, which is more efficient
+      and properly does what it’s supposed to do.
+    </Paragraph>
+    <DividerSm />
+    <Image
+      link="/src/assets/steam-engine/sezione-3-better-input.png"
+      alt="Better water input image"
+      height="h-1/4"
+    >
+      This is what it looks like
+    </Image>
+    <DividerSm />
+    <Paragraph>
+      The difference between the first and the second design is only one — but a
+      very important one: the “buffer” fills up. It may seem like a small
+      detail, but it’s actually super useful because this design truly does what
+      it’s meant to do: serve as a backup.
+      <NewLine />
+      It’s made up of several blocks, each one crucial:
+    </Paragraph>
+    <DividerSm />
+    <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>
+        <LinkDocument link="#water-tank-input" text="18 water tanks" />
+      </li>
+      <li>
+        <LinkDocument link="#steam-engine-input" text="1 steam engine" />
+      </li>
+      <li>
+        <LinkDocument link="#shafts-input" text="3 shafts" />
+      </li>
+      <li>
+        <LinkDocument
+          link="#rotation-speed-controllers"
+          text="2 rotation speed controllers"
+        />
+      </li>
+      <li>
+        <LinkDocument link="#large-cogs" text="2 large cogs" />
+      </li>
+      <li>
+        <LinkDocument link="#cogs" text="6 cogs" />
+      </li>
+      <li>
+        <LinkDocument link="#mechanical-pumps" text="4 mechanical pumps" />
+      </li>
+      <li>
+        <LinkDocument link="#copper-pipes" text="4 copper pipes" />
+      </li>
+    </ul>
+    <DividerSm />
+    <Subtitle title="WATER TANKS" />
+    <Paragraph>
+      In this case, the tanks serve as a buffer.
+      <NewLine />
+      This part is extremely important because if, for any reason, the infinite water
+      sources disappear, there will still be a bit of water that keeps the boiler
+      running longer. In combination with the rear engine, this allows the boiler
+      to never shut off—except when, for any reason, there are no more infinite water
+      sources, in which case the operation will only be temporary.
+    </Paragraph>
+  </div>
 </Layout>
 
 <script lang="ts" is:inline>
-    const nodeElement = document.getElementById("id-node-1");
-    const iconElement = document.getElementById("chevronIcon-1");
-    const nodeElement2 = document.getElementById("id-node-2");
-    const iconElement2 = document.getElementById("chevronIcon-2");
+  const nodeElement = document.getElementById("id-node-1");
+  const iconElement = document.getElementById("chevronIcon-1");
+  const nodeElement2 = document.getElementById("id-node-2");
+  const iconElement2 = document.getElementById("chevronIcon-2");
 
-    if (nodeElement) nodeElement.style.display = "block";
-    if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
-    if (nodeElement2) nodeElement2.style.display = "block";
-    if (iconElement2)
-        iconElement2.style.setProperty("--fa-rotate-angle", "0deg");
+  if (nodeElement) nodeElement.style.display = "block";
+  if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+  if (nodeElement2) nodeElement2.style.display = "block";
+  if (iconElement2) iconElement2.style.setProperty("--fa-rotate-angle", "0deg");
 </script>
