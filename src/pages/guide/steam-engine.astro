@@ -581,7 +581,246 @@ import "../../styles/global.css";
       to never shut off—except when, for any reason, there are no more infinite water
       sources, in which case the operation will only be temporary.
     </Paragraph>
+    <DividerSm />
+    <Subtitle title="STEAM ENGINE" />
+    <Paragraph>
+      This is the most important engine you can put in a boiler.
+      <NewLine />
+      As mentioned before, each engine is individual, so even if the output system
+      goes into overstress, the engine behind still provides power to the pumps,
+      keeping the boiler running and thus avoiding waste of combustible materials
+      for the blaze burners.
+    </Paragraph>
+    <DividerSm />
+    <Subtitle title="SHAFT" />
+    <Paragraph>
+      In this case, the shafts are used to connect the steam engine to the two
+      rotation speed controllers, and to connect the two large gears to the
+      smaller gears.
+    </Paragraph>
+    <DividerSm />
+    <Subtitle title="ROTATION SPEED CONTROLLER" />
+    <Paragraph>
+      These blocks are used, as the name suggests, to regulate the RPM, meaning
+      they can both decrease and increase it.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/rotation-speed-controller.webp"
+        alt="Rotation speed controller image"
+        height="h-1/4"
+      >
+        Here’s what a rotation speed controller looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/rpm-controller-recipe.png"
+        alt="Rotation speed controller recipe"
+        height="h-1/4"
+      >
+        They are crafted using a brass casing and a precision mechanism
+      </Image>
+    </div>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/items/precision-mechanism.webp"
+        alt="Rotation speed controller image"
+        height="h-1/4"
+      >
+        Here’s what a precision mechanism looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/precision-mechanism-recipe.png"
+        alt="Rotation speed controller recipe"
+        height="h-1/4"
+      >
+        They are crafted using a gold sheet, 5 cogwheels, 5 big cogwheels and 5
+        iron nuggets
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      These blocks are used to regulate not only the rotation speed (from 1 RPM
+      up to 256 RPM) but also the direction (clockwise and counterclockwise).
+      However, there is a cost: the inputs and outputs (since there’s more than
+      one) are in separate blocks. For example, the output (the large gear) in
+      this case is located in the block above.
+      <NewLine />
+      Rotation speed controllers are placed next to the shafts, and since they also
+      function as shafts, they can replace one.
+    </Paragraph>
+    <DividerSm />
+    <Image
+      link="/src/assets/examples/rpm-controller-example.png "
+      alt="Rotation speed controller recipe"
+      height="h-1/4"
+    >
+      As in this case
+    </Image>
+    <DividerSm />
+    <Paragraph>
+      Using two rotation speed controllers is crucial because it allows the pump
+      pairs to run at two different speeds.
+      <NewLine />
+      In fact, the input pair of the buffer runs at 256 RPM, while the input pair
+      of the boiler runs at 180 RPM (the minimum required for a level 18 boiler),
+      allowing the buffers to fill up.
+    </Paragraph>
+    <DividerSm />
+    <Subtitle title="LARGE GEARS" />
+    <Paragraph>
+      The large gears are used to operate the rotation speed controllers,
+      providing either an input or an output—in this case, an output.
+      <NewLine />
+      It has 2 recipes
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/large-cogwheel.webp"
+        alt="Shaft image"
+        height="h-1/4"
+      >
+        Here’s what a large cog looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/large-cogwheel-recipe-1.png"
+        alt="Large cogwheels recipe"
+        height="h-1/4"
+      >
+        This is the first one, it uses one shaft and 2 wooden planks
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/large-cogwheel-recipe-2.png"
+        alt="Large cogwheels recipe"
+        height="h-1/4"
+      >
+        This is the first one, it uses 1 cogwheel and 1 wooden plank
+      </Image>
+    </div>
+    <DividerSm />
+    <Subtitle title="COGWHEELS" />
+    <Paragraph>
+      Cogwheels are mainly used, as in this case, to transfer kinetic energy to
+      the pumps.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/cogwheel.webp"
+        alt="Cogwheel image"
+        height="h-1/4"
+      >
+        Here's what a cogwheel looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/cogwheel-recipe.png"
+        alt="Cogwheel recipe image"
+        height="h-1/4"
+      >
+        They are crafted using 1 shaft and 1 wooden plank
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      Cogwheels, like the encased chain drives, can also transfer kinetic energy
+      vertically, but every time a new gear is placed, the rotation direction
+      changes.
+    </Paragraph>
+    <DividerSm />
+    <Subtitle title="MECHANICAL PUMPS" />
+    <Paragraph>
+      Mechanical pumps are used to transport liquids through pipes that then end
+      up in tanks.
+      <br />
+      To work properly, and to draw water, they need an infinite source.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/mechanical-pump.webp"
+        alt="Shaft image"
+        height="h-1/4"
+      >
+        Here’s what a mechanical pump looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/mechanical-pump-recipe.png"
+        alt="Mechanical pump recipe"
+        height="h-1/4"
+      >
+        They are crafted using 1 cogwheel and 1 copper pipe
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      The rotation direction does not affect the flow direction, but it can be
+      changed with a wrench.
+      <br />
+      It can transport fluids up to 16 blocks away (configurable in the Create settings).
+      <NewLine />
+      Here we introduce a new feature: the impact on stress.
+      <br />
+      Basically, it’s how many SU it consumes. The impact per pump is: RPM × 4.
+      <NewLine />
+      So:
+    </Paragraph>
+    <DividerSm />
+    <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>For those running at 256 RPM: 256 × 4 = 1,024 SU</li>
+      <li>For those running at 180 RPM: 180 × 4 = 720 SU</li>
+    </ul>
+    <DividerSm />
+    <Paragraph>
+      Thus, the buffer’s input pair has an impact of: 1,024 × 2 = 2,048 SU
+      <br />
+      While the boiler’s input pair will have: 720 × 2 = 1,440 SU
+    </Paragraph>
+    <DividerSm />
+    <Subtitle title="COPPER PIPES" />
+    <Paragraph>
+      The name is fairly self-explanatory, so it doesn’t need an introduction.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/fluid-pipe.webp"
+        alt="Shaft image"
+        height="h-1/4"
+      >
+        Here’s what a copper pipe looks like
+      </Image>
+      <DividerSm />
+      <Image
+        link="/src/assets/recipes/fluid-pipe-recipe.png"
+        alt="Shaft recipe"
+        height="h-1/4"
+      >
+        They are crafted using 2 copper sheet and 1 copper ingot
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      They can also be crafted by placing copper plates vertically instead of
+      horizontally.
+      <NewLine />
+      In this case, their use is to connect infinite water sources to the pumps.
+    </Paragraph>
   </div>
+  <DividerSm />
+  <Conclusions>
+    With this, you know the components of a boiler and how they work. Try
+    different layouts, play with rotation speeds and gear setups, and see how
+    far you can push your system efficiently!
+  </Conclusions>
+  <DividerSm />
 </Layout>
 
 <script lang="ts" is:inline>
