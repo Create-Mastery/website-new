@@ -2,17 +2,19 @@
 
 # WEBSITE
 
-This is the official website of create mastery.
+This is the official website of create mastery
 
-![badge astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)
-![badge tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![astro badge](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)
+![tailwind badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![html badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![typescript badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 </div>
 
-Is built using this frameworks:
+Is built using this frameworks
 
-- Astro
-- Tailwindcss
+- ![Astro](https://astro.build/)
+- ![Tailwindcss](https://tailwindcss.com)
 
 ## How to run it
 
@@ -26,8 +28,12 @@ Is built using this frameworks:
 > ```bash
 > npm install
 > ```
->
 > then you can run the local server
 > ```bash
 > npm run dev
 > ```
+
+## License
+
+- Code: [MIT](./LICENSE)  
+- Content (guides, docs): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
