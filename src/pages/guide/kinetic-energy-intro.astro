@@ -13,107 +13,106 @@ import "../../styles/global.css";
 ---
 
 <Layout title="Guide 'kinetic energy' - Create Mastery">
-    <Title title="INTRODUCTION" />
-    <Paragraph>
-        This page is the actual guide that will help you understand Create and
-        how it works. In the chapters below, you’ll find the basics of Create.
-        <NewLine />
-        On this page, we’ll explain the different methods for generating kinetic
-        energy, as well as some basic ways to transport it.
-        <NewLine />
-        <Disclaimer>
-            before continuing, we recommend reading the
-            <Link link="/guide" text="introduction" />
-            first.
-        </Disclaimer>
-    </Paragraph>
-    <DividerMd />
-    <div id="stressometer-speedometer-intro">
-        <Title title="ROTATIONAL / KINETIC FORCE" />
-    </div>
-    <Paragraph>
-        Create is based on rotational force (also called kinetic force).
-        <br />
-        This is measured in SU (Stress Units), while the rotational speed is measured
-        in RPM (Rotations per Minute).
-        <br />
-        The values of both cannot be seen without specific blocks:
-    </Paragraph>
+  <Title title="INTRODUCTION" />
+  <Paragraph>
+    This page is the actual guide that will help you understand Create and how
+    it works. In the chapters below, you’ll find the basics of Create.
+    <NewLine />
+    On this page, we’ll explain the different methods for generating kinetic energy,
+    as well as some basic ways to transport it.
+    <NewLine />
+    <Disclaimer>
+      before continuing, we recommend reading the
+      <Link link="/guide" text="introduction" />
+      first.
+    </Disclaimer>
+  </Paragraph>
+  <DividerMd />
+  <div id="stressometer-speedometer-intro">
+    <Title title="ROTATIONAL / KINETIC FORCE" />
+  </div>
+  <Paragraph>
+    Create is based on rotational force (also called kinetic force).
+    <br />
+    This is measured in SU (Stress Units), while the rotational speed is measured
+    in RPM (Rotations per Minute).
+    <br />
+    The values of both cannot be seen without specific blocks:
+  </Paragraph>
+  <DividerSm />
+  <div class="flex md:flex-row flex-col gap-2 w-fit">
+    <Image
+      link="/src/assets/blocks/stressometer.webp"
+      alt="Stressometer image"
+      height="h-1/4"
+    >
+      Stressometer
+    </Image>
     <DividerSm />
-    <div class="flex md:flex-row flex-col gap-2 w-fit">
-        <Image
-            link="/src/assets/blocks/stressometer.webp"
-            alt="Stressometer image"
-            height="h-1/4"
-        >
-            Stressometer
-        </Image>
-        <DividerSm />
-        <Image
-            link="/src/assets/blocks/speedometer.webp"
-            alt="Speedometer image"
-            height="h-1/4"
-        >
-            Speedometer
-        </Image>
-    </div>
+    <Image
+      link="/src/assets/blocks/speedometer.webp"
+      alt="Speedometer image"
+      height="h-1/4"
+    >
+      Speedometer
+    </Image>
+  </div>
+  <DividerSm />
+  <Paragraph>
+    For these two blocks to work, they need to be connected to a functional
+    shaft (i.e., one that is spinning).
+  </Paragraph>
+  <DividerSm />
+  <Title title="SHAFTS" id="shafts-intro" />
+  <Paragraph>
+    Shafts are the main method of horizontally transporting kinetic energy.
+    <br />
+    They are used to connect machines that consume SU to generators that produce
+    SU, though they’re not the only way.
+    <NewLine />
+    Shafts are also the only block in the mod on which conveyor belts can be placed.
+  </Paragraph>
+  <DividerSm />
+  <div class="flex md:flex-row flex-col gap-2 w-fit">
+    <Image
+      link="/src/assets/blocks/shaft.webp"
+      alt="Shaft image"
+      height="h-1/4"
+    >
+      Here’s what a shaft looks like
+    </Image>
     <DividerSm />
-    <Paragraph>
-        For these two blocks to work, they need to be connected to a functional
-        shaft (i.e., one that is spinning).
-    </Paragraph>
-    <DividerSm />
-    <Title title="SHAFTS" id="shafts-intro" />
-    <Paragraph>
-        Shafts are the main method of horizontally transporting kinetic energy.
-        <br />
-        They are used to connect machines that consume SU to generators that produce
-        SU, though they’re not the only way.
-        <NewLine />
-        Shafts are also the only block in the mod on which conveyor belts can be
-        placed.
-    </Paragraph>
-    <DividerSm />
-    <div class="flex md:flex-row flex-col gap-2 w-fit">
-        <Image
-            link="/src/assets/blocks/shaft.webp"
-            alt="Shaft image"
-            height="h-1/4"
-        >
-            Here’s what a shaft looks like
-        </Image>
-        <DividerSm />
-        <Image
-            link="/src/assets/recipes/shaft-recipe.png"
-            alt="Shaft recipe"
-            height="h-1/4"
-        >
-            They are crafted using 2 Andesite Alloys
-        </Image>
-    </div>
-    <DividerMd />
-    <Title title="METHODS OF GENERATING KINETIC ENERGY" />
-    <Paragraph> There are 4 main ways to generate kinetic energy:</Paragraph>
-    <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
-        <li>
-            <Link link="/guide/steam-engine" text="Steam Engine" />
-        </li>
-        <li>
-            <Link link="/guide/windmill" text="Windmill" />
-        </li>
-        <li>
-            <Link link="/guide/water-wheels" text="Water Wheels" />
-        </li>
-        <li>
-            <Link link="/guide/hand-crank" text="Hand Crank" />
-        </li>
-    </ul>
+    <Image
+      link="/src/assets/recipes/shaft-recipe.png"
+      alt="Shaft recipe"
+      height="h-1/4"
+    >
+      They are crafted using 2 Andesite Alloys
+    </Image>
+  </div>
+  <DividerMd />
+  <Title title="METHODS OF GENERATING KINETIC ENERGY" />
+  <Paragraph> There are 4 main ways to generate kinetic energy:</Paragraph>
+  <ul class="text-stone-200 text-xl ml-4 list-disc list-inside">
+    <li>
+      <Link link="/guide/steam-engine" text="Steam Engine" />
+    </li>
+    <li>
+      <Link link="/guide/windmill" text="Windmill" />
+    </li>
+    <li>
+      <Link link="/guide/water-wheels" text="Water Wheels" />
+    </li>
+    <li>
+      <Link link="/guide/hand-crank" text="Hand Crank" />
+    </li>
+  </ul>
 </Layout>
 
 <script lang="ts" is:inline>
-    const nodeElement = document.getElementById("id-node-1");
-    const iconElement = document.getElementById("chevronIcon-1");
+  const nodeElement = document.getElementById("id-node-1");
+  const iconElement = document.getElementById("chevronIcon-1");
 
-    if (nodeElement) nodeElement.style.display = "block";
-    if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+  if (nodeElement) nodeElement.style.display = "block";
+  if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
 </script>

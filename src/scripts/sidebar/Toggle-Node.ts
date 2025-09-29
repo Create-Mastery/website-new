@@ -7,5 +7,8 @@ export function toggleNode(id: string) {
   const isOpen = entryContent.style.display === "block";
 
   entryContent.style.display = isOpen ? "none" : "block";
-  chevronIcon.style.setProperty("--fa-rotate-angle", isOpen ? "-90deg" : "0deg");
+  chevronIcon.style.setProperty(
+    "--fa-rotate-angle",
+    isOpen ? "-90deg" : "0deg",
+  );
 }

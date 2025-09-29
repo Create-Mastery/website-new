@@ -2,25 +2,25 @@
 import "../../styles/global.css";
 
 interface Props {
-    title: string;
-    id: string;
+  title: string;
+  id: string;
 }
 
 const { title, id } = Astro.props as Props;
 ---
 
 <div
-    class="sidebar-wrapper h-fit bg-stone-700 border rounded flex flex-col justify-between border-stone-700 text-blue-300 font-bold py-1 px-3 gap-2 text-xl select-none hover:cursor-pointer"
-    data-id={id}
+  class="sidebar-wrapper h-fit bg-stone-700 border rounded flex flex-col justify-between border-stone-700 text-blue-300 font-bold py-1 px-3 gap-2 text-xl select-none hover:cursor-pointer"
+  data-id={id}
 >
-    <div>
-        {title}
-        <i
-            id={"chevronIcon-" + id}
-            class="fa-solid fa-chevron-down fa-rotate-by fa-lg transition-transform duration-300"
-            style="--fa-rotate-angle: -90deg;"></i>
-    </div>
-    <div class="hidden" id={"id-node-" + id}>
-        <slot />
-    </div>
+  <div>
+    {title}
+    <i
+      id={"chevronIcon-" + id}
+      class="fa-solid fa-chevron-down fa-rotate-by fa-lg transition-transform duration-300"
+      style="--fa-rotate-angle: -90deg;"></i>
+  </div>
+  <div class="hidden" id={"id-node-" + id}>
+    <slot />
+  </div>
 </div>
