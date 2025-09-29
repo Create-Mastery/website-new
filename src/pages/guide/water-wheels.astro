@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout-guide.astro";
+import Paragraph from "../../components/guide/Paragraph.astro";
+import Title from "../../components/guide/Title.astro";
+import Subtitle from "../../components/guide/Subtitle.astro";
+import DividerMd from "../../components/guide/Divider-md.astro";
+import DividerSm from "../../components/guide/Divider-sm.astro";
+import Image from "../../components/guide/Image.astro";
+import LinkDocument from "../../components/guide/Links-in-document.astro";
+import NewLine from "../../components/guide/New-line.astro";
+import Conclusions from "../../components/guide/Conclusions.astro";
+import "../../styles/global.css";
+---
+
+<Layout title="Guide 'water wheels' - Create Mastery">
+  <Title title="WATER WHEELS" />
+</Layout>
+
+<script lang="ts" is:inline>
+  const nodeElement = document.getElementById("id-node-1");
+  const iconElement = document.getElementById("chevronIcon-1");
+  const nodeElement2 = document.getElementById("id-node-2");
+  const iconElement2 = document.getElementById("chevronIcon-2");
+
+  if (nodeElement) nodeElement.style.display = "block";
+  if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+  if (nodeElement2) nodeElement2.style.display = "block";
+  if (iconElement2) iconElement2.style.setProperty("--fa-rotate-angle", "0deg");
+</script>
