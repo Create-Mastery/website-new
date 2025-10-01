@@ -14,6 +14,383 @@ import "../../styles/global.css";
 
 <Layout title="Guide 'windmill' - Create Mastery">
   <Title title="WINDMILL" />
+  <Paragraph>
+    Windmills are the second-best generator in the entire mod, but with one
+    drawback:
+    <br />
+    They are the slowest.
+    <NewLine />
+    They are very survival-friendly since they usually require only a few blocks
+    and, unlike steam engines, they don’t need any input materials. However, if pushed
+    to the maximum, they take up a lot of space.
+  </Paragraph>
+  <DividerSm />
+  <Image
+    link="/src/assets/windmill/windmills.png"
+    alt="Windmill example"
+    height="1/4"
+  >
+    Here are some examples of windmills
+  </Image>
+  <DividerSm />
+  <Paragraph>To function, a windmill requires these blocks:</Paragraph>
+  <DividerSm />
+  <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+    <li>1 Windmill bearing</li>
+    <li>At least 8 radial supports (radial chassis) (optional)</li>
+    <li>You must use at least 8 blocks from the following:</li>
+    <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>Sails</li>
+      <li>Sail frames</li>
+      <li>Wool</li>
+    </ol>
+  </ol>
+  <DividerSm />
+  <Paragraph>
+    For the windmill, we’ll do the same as with the steam engine: we’ll divide
+    it into sections.
+    <NewLine />
+    It is made up of 3 sections:
+  </Paragraph>
+  <DividerSm />
+  <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+    <li>
+      <LinkDocument link="#windmill-1" text="Windmill" />
+    </li>
+    <li>
+      <LinkDocument link="#windmill-2" text="Windmill bearing" />
+    </li>
+    <li>
+      <LinkDocument link="#windmill-3" text="Output" />
+    </li>
+  </ol>
+  <DividerSm />
+  <!--
+  WINDMILL 1
+  -->
+  <div id="windmill-1">
+    <Title title="1. WINDMILL" />
+    <Paragraph>
+      This is the part that rotates and generates the SUs, so the number of
+      blocks (excluding the radial supports) determines the amount of SUs
+      produced and the rotation speed.
+    </Paragraph>
+    <DividerSm />
+    <Image
+      link="/src/assets/windmill/windmill-example.png"
+      alt="Windmill example"
+      height="1/4"
+    >
+      This is what it looks like
+    </Image>
+    <DividerSm />
+    <Paragraph>It consists of 2 blocks and one item:</Paragraph>
+    <DividerSm />
+    <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>
+        <LinkDocument link="#radial-chassis" text="8 radial chassis" />
+      </li>
+      <li>
+        <LinkDocument link="#sails" text="8 sails" />
+      </li>
+      <li>
+        <LinkDocument link="#superglue" text="Superglue" />
+      </li>
+    </ol>
+    <DividerSm />
+    <!-- RADIAL CHASSIS -->
+    <div id="radial-chassis">
+      <Subtitle title="RADIAL CHASSIS" />
+      <Paragraph>
+        As the name suggests, these are supports where the sails are placed, but
+        they need to be attached with superglue.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/blocks/radial-chassis.webp"
+          alt="Steam engine block image"
+          height="h-1/4"
+        >
+          Here’s what a radial chassis looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/radial-chassis-recipe.png"
+          alt="Steam engine recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        The sails can be attached on all 4 sides, so in reality, you only need 2
+        to take up less vertical space.
+      </Paragraph>
+    </div>
+    <DividerSm />
+    <!-- SAILS -->
+    <div id="sails">
+      <Subtitle title="SAILS" />
+      <Paragraph>
+        Without these, the windmill wouldn’t start.
+        <NewLine />
+        They don’t necessarily need to be attached to supports; they can also be
+        attached directly to the mill support.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/windmill/sails-example-vertical.png"
+          alt="Vertical sails"
+          height="h-1/4"
+        >
+          They can be placed both vertically
+        </Image>
+        <Image
+          link="/src/assets/windmill/sails-example-horizontal.png"
+          alt="Horizontal sails"
+          height="h-1/4"
+        >
+          And horizontaly
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        The choice of styles is completely personal because performance doesn’t
+        change, so it’s purely cosmetic.
+        <NewLine />
+        Here’s a table with all the data you need to know:
+      </Paragraph>
+      <DividerSm />
+      <table
+        class="table-fixed text-stone-200 border-separate border-spacing-3 border-blue-300 bg-stone-800 rounded-xl border-2"
+      >
+        <tr class="text-blue-300 font-bold">
+          <td>NUMBER OF SAILS</td>
+          <td>ENERGY PRODUCED</td>
+          <td>RPM</td>
+        </tr>
+        <tr>
+          <td>
+            0-7
+            <br /><br />
+            8-15
+            <br /><br />
+            16-23
+            <br /><br />
+            24-31
+            <br /><br />
+            32-39
+            <br /><br />
+            40-47
+            <br /><br />
+            48-55
+            <br /><br />
+            56-63
+            <br /><br />
+            64-71
+            <br /><br />
+            72-79
+            <br /><br />
+            80-87
+            <br /><br />
+            88-95
+            <br /><br />
+            96-103
+            <br /><br />
+            104-111
+            <br /><br />
+            112-119
+            <br /><br />
+            120-127
+            <br /><br />
+            128+
+          </td>
+          <td>
+            0 SU
+            <br /><br />
+            512 SU
+            <br /><br />
+            1024 SU
+            <br /><br />
+            1536 SU
+            <br /><br />
+            2048 SU
+            <br /><br />
+            2560 SU
+            <br /><br />
+            3072 SU
+            <br /><br />
+            3584 SU
+            <br /><br />
+            4096 SU
+            <br /><br />
+            4608 SU
+            <br /><br />
+            5120 SU
+            <br /><br />
+            5632 SU
+            <br /><br />
+            6144 SU
+            <br /><br />
+            6656 SU
+            <br /><br />
+            7168 SU
+            <br /><br />
+            7680 SU
+            <br /><br />
+            8192 SU
+          </td>
+          <td>
+            0
+            <br /><br />
+            1
+            <br /><br />
+            2
+            <br /><br />
+            3
+            <br /><br />
+            4
+            <br /><br />
+            5
+            <br /><br />
+            6
+            <br /><br />
+            7
+            <br /><br />
+            8
+            <br /><br />
+            9
+            <br /><br />
+            10
+            <br /><br />
+            11
+            <br /><br />
+            12
+            <br /><br />
+            13
+            <br /><br />
+            14
+            <br /><br />
+            15
+            <br /><br />
+            16
+          </td>
+        </tr>
+      </table>
+      <DividerSm />
+      <Paragraph>
+        As you can see from the table, there’s no maximum number of sails you
+        can add, but going beyond 128 doesn’t make sense because it doesn’t
+        increase SUs or RPM.
+      </Paragraph>
+    </div>
+    <DividerSm />
+    <!-- SUPER GLUE -->
+    <div id="superglue">
+      <Subtitle title="SUPER GLUE" />
+      <Paragraph>
+        Superglue isn’t a block, as already mentioned, but an item to be used.
+        <NewLine />
+        As the name suggests, it’s a glue—indeed, it is—and it’s used to attach the
+        sails to the radial supports.
+      </Paragraph>
+      <DividerSm />
+      <div class="flex md:flex-row flex-col gap-2 w-fit">
+        <Image
+          link="/src/assets/items/super-glue.webp"
+          alt="Steam engine block image"
+          height="h-1/4"
+        >
+          Here’s what a super glue looks like
+        </Image>
+        <Image
+          link="/src/assets/recipes/super-glue-recipe.png"
+          alt="Steam engine recipe"
+          height="h-1/4"
+        >
+          And this is the recipe
+        </Image>
+      </div>
+      <DividerSm />
+      <Paragraph>
+        Using it is really simple.
+        <NewLine />
+        Here I’ll explain the method I used for this windmill (but you can use it
+        for all others too):
+        <NewLine />
+        Just left-click on the face of the radial support where you want the sails
+        to attach. If you double left-click, it applies to all sides.
+        <NewLine />
+        To remove it, simply right-click on the side where you want to take it off.
+      </Paragraph>
+      <DividerSm />
+      <Image
+        link="/src/assets/windmill/super-glue-example.png"
+        alt="Super glue example"
+        height="h-1/4"
+      >
+        Here's an example
+      </Image>
+    </div>
+  </div>
+  <DividerMd />
+  <!--
+  WINDMILL 2
+  -->
+  <div id="windmill-2">
+    <Title title="2. WINDMILL BEARING" />
+    <Paragraph>
+      This, on the other hand, is the block that makes the windmill work;
+      basically, it’s the one that sets the windmill in motion to generate SUs.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/windmill-bearing.webp"
+        alt="Windmill bearing image"
+        height="h-1/4"
+      >
+        Here’s what a windmill bearing looks like
+      </Image>
+      <Image
+        link="/src/assets/recipes/windmill-bearing-recipe.png"
+        alt="Windmill bearing recipe"
+        height="h-1/4"
+      >
+        And this is the recipe
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      Using a wrench, you can change the rotation direction
+      (clockwise/counterclockwise).
+      <NewLine />
+      Its output is located at the bottom, on the side opposite to where the sails
+      are attached.
+    </Paragraph>
+  </div>
+  <DividerMd />
+  <!--
+  WINDMILL 3
+  -->
+  <div id="windmill-3">
+    <Title title="3. OUTPUT" />
+    <Paragraph>
+      This is where the kinetic energy comes out. You can connect practically
+      any block from the mod (of course, only those that can be connected to a
+      shaft), so you can even attach a machine or anything else, including
+      another windmill!
+    </Paragraph>
+  </div>
+  <DividerSm />
+  <Conclusions>
+    Now you’re ready to build a fully functional windmill, with a handy table to
+    guide you based on your needs—whether it’s available space, SUs to generate,
+    or just the style you like.
+  </Conclusions>
+  <DividerSm />
 </Layout>
 
 <script lang="ts" is:inline>
