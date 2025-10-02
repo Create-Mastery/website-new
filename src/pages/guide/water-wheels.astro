@@ -14,6 +14,113 @@ import "../../styles/global.css";
 
 <Layout title="Guide 'water wheels' - Create Mastery">
   <Title title="WATER WHEELS" />
+  <Paragraph>
+    Water wheels are the most survival-friendly generator of all, since they
+    have a minimal material cost and take up little space. Sure, they produce
+    less power compared to other generators, but considering the low cost and
+    the small space required, it’s justified.
+  </Paragraph>
+  <DividerSm />
+  <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+    <li>
+      <LinkDocument link="#water-wheel" text="Water wheel" />
+    </li>
+    <li>
+      <LinkDocument link="#large-water-wheel" text="Large water wheel" />
+    </li>
+  </ol>
+  <DividerSm />
+  <!--
+  WATER WHEEL
+  -->
+  <div id="water-wheel">
+    <Subtitle title="WATER WHEEL" />
+    <Paragraph>
+      Among the two types, it’s the smaller one, the fastest, but it produces
+      the least SUs.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/water-wheel.webp"
+        alt="Water wheel block image"
+        height="h-1/4"
+      >
+        Here’s what a water wheel looks like
+      </Image>
+      <Image
+        link="/src/assets/recipes/water-wheel-recipe.png"
+        alt="Water wheel recipe"
+        height="h-1/4"
+      >
+        And this is the recipe
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      Even though it can be crafted with any type of wood, to change it after
+      placing it, just right-click it with any type of plank—except spruce,
+      which is the default—and it will change color accordingly.
+    </Paragraph>
+    <DividerSm />
+    <Image
+      link="/src/assets/waterwheel/water-wheel-example.png"
+      alt="Water wheel example"
+      height="h-1/4"
+    >
+      To make it work, you need to place water on one of its four sides
+    </Image>
+    <DividerSm />
+    <Paragraph>
+      To generate more SUs, you need to place them in parallel. Of course, each
+      one needs water. The output is on the sides and works like a windmill, so
+      you can connect anything that links to a shaft.
+      <br />
+      To change the rotation direction, simply change the water flow direction.
+      <NewLine />
+      It produces 256 SUs at 8 RPM.
+    </Paragraph>
+  </div>
+  <DividerMd />
+  <!--
+  BIG WATER WHEEL
+  -->
+  <div id="large-water-wheel">
+    <Subtitle title="LARGE WATER WHEEL" />
+    <Paragraph>
+      This is the type that produces the most SUs, but it’s the slowest and
+      takes up the most space.
+    </Paragraph>
+    <DividerSm />
+    <div class="flex md:flex-row flex-col gap-2 w-fit">
+      <Image
+        link="/src/assets/blocks/large-water-wheel.webp"
+        alt="Steam engine block image"
+        height="h-1/4"
+      >
+        Here’s what a large water wheel looks like
+      </Image>
+      <Image
+        link="/src/assets/recipes/big-water-wheel-recipe.png"
+        alt="Steam engine recipe"
+        height="h-1/4"
+      >
+        And this is the recipe
+      </Image>
+    </div>
+    <DividerSm />
+    <Paragraph>
+      Its operation is the same as the smaller water wheel.
+      <NewLine />
+      It produces 512 SUs at 4 RPM.
+    </Paragraph>
+  </div>
+  <DividerSm />
+  <Conclusions>
+    Now you understand everything about water wheels—their types, how to build
+    them, and how they work.
+  </Conclusions>
+  <DividerSm />
 </Layout>
 
 <script lang="ts" is:inline>

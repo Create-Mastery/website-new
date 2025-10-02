@@ -35,5 +35,5 @@ Is built using this frameworks
 
 ## License
 
-- Code: [MIT](./LICENSE)  
+- Code: [GPL 3.0](./LICENSE)  
 - Content (guides, docs): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

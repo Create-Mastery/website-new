@@ -1,0 +1,135 @@
+---
+import Layout from "../../layouts/Layout-guide.astro";
+import Paragraph from "../../components/guide/Paragraph.astro";
+import Title from "../../components/guide/Title.astro";
+import Subtitle from "../../components/guide/Subtitle.astro";
+import DividerSm from "../../components/guide/Divider-sm.astro";
+import DividerMd from "../../components/guide/Divider-md.astro";
+import NewLine from "../../components/guide/New-line.astro";
+import Conclusions from "../../components/guide/Conclusions.astro";
+import Link from "../../components/guide/Links.astro";
+import "../../styles/global.css";
+---
+
+<Layout title="Guide 'conclusions' - Create Mastery">
+  <Title title="CONCLUSIONS" />
+  <DividerSm />
+  <Subtitle title="SUMMARY TABLE" />
+  <DividerSm />
+  <table
+    class="table-auto text-stone-200 border-separate border-spacing-3 border-blue-300 bg-stone-800 rounded-xl border-2"
+  >
+    <thead>
+      <tr class="text-blue-300 font-bold text-2xl">
+        <td>STEAM ENGINE</td>
+        <td>WINDMILL</td>
+        <td>WATER WHEELS</td>
+        <td>CRANK</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="align-top">
+          <span class="text-stone-200 text-xl font-bold">PROS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>High amount of SUs and RPM generated</li>
+            <li>Great for end-game</li>
+            <li>Outputs in multiple positions</li>
+          </ol>
+          <DividerMd />
+
+          <span class="text-stone-200 text-xl font-bold">CONS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Takes up a lot of space</li>
+            <li>Very expensive to build and maintain</li>
+          </ol>
+        </td>
+
+        <td class="align-top">
+          <span class="text-stone-200 text-xl font-bold">PROS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Highly expandable</li>
+            <li>Excellent cost/space/SU ratio</li>
+            <li>Relatively cheap</li>
+            <li>Great for mid-game</li>
+          </ol>
+          <DividerMd />
+
+          <span class="text-stone-200 text-xl font-bold">CONS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Expensive at max level</li>
+            <li>Takes up a lot of space at max level</li>
+            <li>Very slow</li>
+          </ol>
+        </td>
+
+        <td class="align-top">
+          <span class="text-stone-200 text-xl font-bold">PROS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Very cheap</li>
+            <li>Takes up little space</li>
+            <li>Very expandable</li>
+          </ol>
+          <DividerMd />
+
+          <span class="text-stone-200 text-xl font-bold">CONS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Practically useless in end-game</li>
+            <li>Takes up a lot of space when producing many SUs</li>
+          </ol>
+        </td>
+
+        <td class="align-top">
+          <span class="text-stone-200 text-xl font-bold">PROS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>Very useful in early-game</li>
+            <li>Very fast</li>
+            <li>Instant direction change</li>
+            <li>Occupies 1 block</li>
+          </ol>
+          <DividerMd />
+
+          <span class="text-stone-200 text-xl font-bold">CONS</span>
+          <ol class="text-stone-200 text-md ml-2 list-disc list-inside">
+            <li>The only manual generator</li>
+            <li>Consumes hunger</li>
+            <li>Produces very few SUs</li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <DividerMd />
+  <Conclusions>
+    On this pages you’ve learned:
+    <DividerSm />
+    <ol class="text-stone-200 text-xl ml-4 list-disc list-inside">
+      <li>What kinetic energy is, how to see it, and how to measure it.</li>
+      <li>
+        The 4 methods to generate it, with their pros and cons, and of course,
+        with some data.
+      </li>
+    </ol>
+    <DividerSm />
+    <Paragraph>
+      We hope you enjoyed this guide and, most importantly, that you learned
+      something!
+      <NewLine />
+      Now you’re ready to move on to the
+      <Link link="/guide-pt-2" text="next one" />.
+      <DividerSm />
+    </Paragraph>
+  </Conclusions>
+</Layout>
+
+<script lang="ts" is:inline>
+  const nodeElement = document.getElementById("id-node-1");
+  const iconElement = document.getElementById("chevronIcon-1");
+  const nodeElement2 = document.getElementById("id-node-2");
+  const iconElement2 = document.getElementById("chevronIcon-2");
+
+  if (nodeElement) nodeElement.style.display = "block";
+  if (iconElement) iconElement.style.setProperty("--fa-rotate-angle", "0deg");
+  if (nodeElement2) nodeElement2.style.display = "block";
+  if (iconElement2) iconElement2.style.setProperty("--fa-rotate-angle", "0deg");
+</script>

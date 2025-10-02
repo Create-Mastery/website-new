@@ -2,11 +2,8 @@
 import Layout from "../../layouts/Layout-guide.astro";
 import Paragraph from "../../components/guide/Paragraph.astro";
 import Title from "../../components/guide/Title.astro";
-import Subtitle from "../../components/guide/Subtitle.astro";
-import DividerMd from "../../components/guide/Divider-md.astro";
 import DividerSm from "../../components/guide/Divider-sm.astro";
 import Image from "../../components/guide/Image.astro";
-import LinkDocument from "../../components/guide/Links-in-document.astro";
 import NewLine from "../../components/guide/New-line.astro";
 import Conclusions from "../../components/guide/Conclusions.astro";
 import "../../styles/global.css";
@@ -14,6 +11,43 @@ import "../../styles/global.css";
 
 <Layout title="Guide 'hand crank' - Create Mastery">
   <Title title="HAND CRANK" />
+  <Paragraph>
+    The crank is the only means of generating manual kinetic energy in the mod,
+    which means that to use it, the player has to interact with it.
+  </Paragraph>
+  <DividerSm />
+  <div class="flex md:flex-row flex-col gap-2 w-fit">
+    <Image
+      link="/src/assets/blocks/hand-crank.webp"
+      alt="Hand crank block image"
+      height="h-1/4"
+    >
+      Here’s what an hand crank looks like
+    </Image>
+    <Image
+      link="/src/assets/recipes/hand-crank-recipe.png"
+      alt="Hand crank recipe"
+      height="h-1/4"
+    >
+      And this is the recipe
+    </Image>
+  </div>
+  <DividerSm />
+  <Paragraph>
+    Since it’s a manual generator, using it will consume hunger. It can rotate
+    in both directions; the rotation depends on how the player interacts with
+    it. If the right mouse button is held, it turns counterclockwise; if the
+    player crouches and then holds the right mouse button, it turns clockwise.
+    <br />
+    The output is on the block the player is looking at when placing it.
+    <NewLine />
+    It produces 256 SUs at 32 RPM.
+  </Paragraph>
+  <DividerSm />
+  <Conclusions>
+    Now you’ve got a clear understanding of the crank and how to use it.
+  </Conclusions>
+  <DividerSm />
 </Layout>
 
 <script lang="ts" is:inline>
