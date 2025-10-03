@@ -4,6 +4,8 @@ import LinksFooter from "../components/links/Links-footer.astro";
 import SideBarEntryNode from "../components/guide/Side-bar-entry-node.astro";
 import SideBarEntryNodeInternal from "../components/guide/Side-bar-entry-node-internal.astro";
 import SideBarEntry from "../components/guide/Side-bar-entry.astro";
+
+const { title, description, keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,11 +13,13 @@ import SideBarEntry from "../components/guide/Side-bar-entry.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{description}" />
+    <meta name="keywords" content="{keywords}" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/f0be53b175.js"
       crossorigin="anonymous"></script>
-    <title>{Astro.props.title}</title>
+    <title>{title}</title>
   </head>
   <body class="bg-stone-900 flex flex-col min-h-screen">
     <header class="p-0 m-0 h-fit items-center justify-center flex relative">
