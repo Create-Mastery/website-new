@@ -8,7 +8,7 @@ This is the official website of create mastery
 ![tailwind badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![html badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![typescript badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![ci-cd](https://img.shields.io/github/actions/workflow/status/Create-Mastery/actions/ci-cd.yml?style=for-the-badge&logo=github&logoColor=white&label=CI%2FCD)
+![CI/CD](https://img.shields.io/github/Create-Mastery/actions/workflows/ci-cd.yml/badge.svg?style=for-the-badge&logo=github&logoColor=white&label=CI%2FCD)
 
 https://createmastery.org
 
