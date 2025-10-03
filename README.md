@@ -9,8 +9,9 @@ This is the official website of create mastery
 ![html badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![typescript badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![deploy badge](https://img.shields.io/github/actions/workflow/status/Create-Mastery/website/ci-cd.yml?branch=main&style=for-the-badge&logo=github&logoColor=white)
-
-https://createmastery.org
+<br>
+<br>
+[LINK TO THE SITE](https://createmastery.org)
 
 </div>
 
