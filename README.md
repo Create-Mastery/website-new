@@ -15,9 +15,9 @@ This is the official website of create mastery
 
 | TOOL | LINK | DESCRIPTION |
 |-|-|-|
-| Astro | [LINK WEBSITE](https://astro.build) | Main framework |
-| Tailwindcss | [LINK WEBSITE](https://tailwindcss.com) | Framework for css |
-| Prettier | [LINK WEBSITE](https://prettier.io/) | Formatter |
+| Astro | [WEBSITE](https://astro.build) | Main framework |
+| Tailwindcss | [WEBSITE](https://tailwindcss.com) | Framework for css |
+| Prettier | [WEBSITE](https://prettier.io/) | Formatter |
 
 </div>
 
