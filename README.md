@@ -11,12 +11,15 @@ This is the official website of create mastery
 
 ![deploy badge](https://img.shields.io/github/actions/workflow/status/Create-Mastery/website/ci-cd.yml?branch=main&style=for-the-badge&logo=github&logoColor=white)
 
+## Tools
+
+| TOOL | LINK | DESCRIPTION |
+|-|-|-|
+| Astro | [LINK WEBSITE](https://astro.build) | Main framework |
+| Tailwindcss | [LINK WEBSITE](https://tailwindcss.com) | Framework for css |
+| Prettier | [LINK WEBSITE](https://prettier.io/) | Formatter |
+
 </div>
-
-Is built using this frameworks
-
-- ![Astro](https://astro.build/)
-- ![Tailwindcss](https://tailwindcss.com)
 
 ## How to run it
 
