@@ -26,7 +26,7 @@ Is built using this frameworks
 | `npm run build` | Build and review the site  |
 
 > [!WARNING]
-> when cloning this repo do this
+> when cloning this repo first do this
 > ```bash
 > npm install
 > ```
