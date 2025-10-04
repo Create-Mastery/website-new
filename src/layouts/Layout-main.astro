@@ -62,11 +62,11 @@ const { title, description } = Astro.props;
           role="button"
           tabindex="0"
           onclick="
-                            const navLinks = document.getElementById('navLinks');
-                            const menuToggle = document.getElementById('menu-toggle');
-                            navLinks?.classList.toggle('hidden');
-                            menuToggle?.classList.toggle('bg-blue-300');
-                        "
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menu-toggle');
+            navLinks?.classList.toggle('hidden');
+            menuToggle?.classList.toggle('bg-blue-300');
+          "
         >
         </i>
       </div>
@@ -90,7 +90,7 @@ const { title, description } = Astro.props;
       </ul>
     </nav>
 
-    <main class="flex flex-grow justify-center items-center">
+    <main class="flex flex-col flex-grow justify-center items-center mx-5">
       <!----------- MAIN ----------->
       <slot />
     </main>
