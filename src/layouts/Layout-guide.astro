@@ -22,18 +22,24 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-stone-900 flex flex-col min-h-screen">
-    <header class="p-0 m-0 h-fit items-center justify-center flex relative">
+    <header
+      class="p-0 m-0 h-fit items-center justify-center flex flex-col relative"
+    >
       <div
-        class="bg-blue-300 flex sm:flex-row w-full px-7 py-4 gap-5 sm:justify-between justify-center items-center flex-col"
+        class="bg-blue-300 flex sm:flex-row w-full px-7 py-4 gap-5 lg:justify-between justify-center items-center flex-col"
       >
         <span
-          class="sm:text-3xl text-4xl font-bold text-stone-900 select-none whitespace-nowrap"
+          class="sm:text-4xl text-4xl font-bold text-stone-900 select-none whitespace-nowrap"
           >CREATE MASTERY</span
         >
-        <div class="gap-7 flex flex-row select-none">
+      </div>
+      <div
+        class="px-4 w-full lg:justify-center justify-between h-fit items-center flex flex-row select-none bg-blue-200"
+      >
+        <div class="flex">
           <a
             href="/"
-            class="text-stone-900 text-2xl font-bold hover:underline"
+            class="text-stone-900 text-2xl font-bold lg:hover:bg-blue-300 p-2"
             target="_blank"
           >
             HOME
@@ -41,23 +47,43 @@ const { title, description } = Astro.props;
           <a
             href="/"
             target="_blank"
-            class="text-stone-900 text-2xl font-bold hover:underline"
+            class="text-stone-900 text-2xl font-bold lg:hover:bg-blue-300 p-2"
           >
             SCSDC
           </a>
           <a
             href="https://github.com/Create-Mastery"
             target="_blank"
-            class="text-stone-900 text-2xl font-bold hover:underline"
+            class="text-stone-900 text-2xl font-bold lg:hover:bg-blue-300 p-2"
           >
             GITHUB
           </a>
+        </div>
+        <div>
+          <div
+            id="menu-toggle"
+            class="lg:hidden p-2 px-4 w-full sm:w-auto flex justify-end"
+          >
+            <i
+              class="fa-solid fa-bars text-stone-900 text-4xl hover:cursor-pointer"
+              role="button"
+              tabindex="0"
+              onclick="
+                const navLinks = document.getElementById('sideBar');
+                navLinks?.classList.toggle('hidden');
+              "
+            >
+            </i>
+          </div>
         </div>
       </div>
     </header>
     <main class="flex flex-grow">
       <!----------- MAIN ----------->
-      <div class="w-md min-w-2xs bg-stone-800 hidden lg:flex">
+      <div
+        class="lg:w-md lg:min-w-2xs min-w-full bg-stone-800 hidden lg:flex"
+        id="sideBar"
+      >
         <div class="flex flex-col gap-2 p-3 w-full">
           <SideBarEntry>
             <a href="/guide">INTRODUCTION</a>
